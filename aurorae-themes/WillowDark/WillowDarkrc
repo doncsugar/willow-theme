@@ -7,7 +7,7 @@ Animation=0
 Shadow=true
 
 [Layout]
-BorderLeft=30
+BorderLeft=3
 BorderRight=3
 BorderBottom=4
 TitleEdgeTop=0
