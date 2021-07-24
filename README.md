@@ -50,3 +50,12 @@ You can select these and change or hide the text it shows next to its icon.
 I recommend the following only if you wish to sacrifice utility for aesthetics. Normally, the Location Bar will let you drag and drop files in any of its shown directories.
 
 To get the look in the screenshot, open the hamburger menu and select "Configure Dolphin..." and then go to Startup > New windows > Check the "Make location bar editable" box.
+
+### Window Decorations
+KDE has a theme engine called Aurorae. Like with the Plasma Style themes, it converts `.svg` files into UI elements. With some basic inkscape knowledge, you can make your own assets. Willow only comes with 3 available window buttons (minimize, maximize/restore, and close), but all of them are very easy to edit without a lot of work. Do not change anything inside the document page.
+
+To set up the window decorations, choose "blur" if you are using Lightly or just choose the regular one if you are using Breeze or other opaque theme. A decoration is also included for the "Lightly" color scheme.
+
+"Window border size:" should be set to "No Side Borders" for best results.
+
+Under the "Titlebar Buttons" tab, I have removed "More actions for this window" for the appearance in the screenshot. You can still access the actions by right-clicking the titlebar.
