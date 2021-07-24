@@ -1,7 +1,7 @@
 # willow-theme
 A Windows 11 style demo for KDE Plasma.
 
-![Plasma desktop themed with Willow](/images/willowLight.png)
+![Plasma desktop themed with Willow](willowLight.png)
 
 ## Set-up
 Some of this may be automated in the future.
