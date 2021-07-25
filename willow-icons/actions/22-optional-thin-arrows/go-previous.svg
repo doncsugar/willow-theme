@@ -7,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (1.0+r73+1)"
-   sodipodi:docname="go-previous.svg"
-   id="svg6"
+   viewBox="0 0 22 22"
    version="1.1"
-   viewBox="0 0 22 22">
+   id="svg6"
+   sodipodi:docname="go-previous.svg"
+   inkscape:version="1.0 (1.0+r73+1)">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -25,46 +25,46 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:bbox-nodes="true"
-     inkscape:snap-bbox="true"
-     inkscape:current-layer="svg6"
-     inkscape:window-maximized="1"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="8.2327631"
-     inkscape:cx="13.642078"
-     inkscape:zoom="22.98097"
-     showgrid="true"
-     id="namedview8"
-     inkscape:window-height="1003"
-     inkscape:window-width="1920"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
+     inkscape:snap-smooth-nodes="true"
      inkscape:document-rotation="0"
-     inkscape:snap-smooth-nodes="true">
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     id="namedview8"
+     showgrid="true"
+     inkscape:zoom="22.98097"
+     inkscape:cx="13.642078"
+     inkscape:cy="8.8854771"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
-       id="grid835"
-       type="xygrid" />
+       type="xygrid"
+       id="grid835" />
   </sodipodi:namedview>
   <defs
      id="defs3051">
     <style
-       id="current-color-scheme"
-       type="text/css">
+       type="text/css"
+       id="current-color-scheme">
       .ColorScheme-Text {
         color:#363636;
       }
       </style>
   </defs>
   <path
-     class="ColorScheme-Text"
-     d="M 10.476562,4.000522 A 0.5,0.5 0 0 0 10.146484,4.1470064 L 4.1464844,10.147006 a 0.50005,0.50005 0 0 0 0,0.707032 l 5.9999996,6 a 0.5,0.5 0 0 0 0.707032,0 0.5,0.5 0 0 0 0,-0.707032 L 5.7070312,11.000522 H 17.5 a 0.5,0.5 0 0 0 0.5,-0.5 0.5,0.5 0 0 0 -0.5,-0.5 H 5.7070312 L 10.853516,4.8540376 a 0.5,0.5 0 0 0 0,-0.7070312 0.5,0.5 0 0 0 -0.376954,-0.1464844 z"
+     id="path894"
      style="fill:currentColor"
-     id="path894" />
+     d="M 10.476562,5.000522 A 0.5,0.5 0 0 0 10.146484,5.1470064 L 4.1464844,11.147006 a 0.50005,0.50005 0 0 0 0,0.707032 l 5.9999996,6 a 0.5,0.5 0 0 0 0.707032,0 0.5,0.5 0 0 0 0,-0.707032 L 5.7070312,12.000522 H 17.5 a 0.5,0.5 0 0 0 0.5,-0.5 0.5,0.5 0 0 0 -0.5,-0.5 H 5.7070312 L 10.853516,5.8540376 a 0.5,0.5 0 0 0 0,-0.7070312 0.5,0.5 0 0 0 -0.376954,-0.1464844 z"
+     class="ColorScheme-Text" />
 </svg>
