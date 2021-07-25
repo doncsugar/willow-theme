@@ -22,6 +22,8 @@ Icon packs are installed in your home directory at `~/.local/share/icons/`. Navi
 
 Optionally, if you want thin arrows, you can copy the arrows in `22-optional-thin-arrows` into `actions/22/` instead.
 
+![comparison of 2px navigation arrows vs 1px](images/thickvsthin.png)
+
 ### Dolphin File Manager
 Dolphin, like all KDE software, is quite customisable. You can edit the toolbar by right-clicking it (right-click the hamburger menu in the top-right) and selecting "Configure toolbars..." in the menu. In the configuration window there will be your current toolbar's tools in the right pane. To get the appearance in the screenshot, first remove the item named "Location Bar" from the right pane. The following is taken from the screenshot:
 
