@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,12 +41,12 @@
      inkscape:window-maximized="1"
      inkscape:window-y="0"
      inkscape:window-x="0"
-     inkscape:cy="12.83467"
-     inkscape:cx="46.473765"
-     inkscape:zoom="8.4375"
-     showgrid="false"
+     inkscape:cy="8.6250715"
+     inkscape:cx="13.426473"
+     inkscape:zoom="11.313709"
+     showgrid="true"
      id="namedview14"
-     inkscape:window-height="1003"
+     inkscape:window-height="1001"
      inkscape:window-width="1920"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
@@ -55,14 +55,45 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#c8c8c8">
+     pagecolor="#d5d5d5">
     <inkscape:grid
        id="grid4539"
+       type="xygrid" />
+    <inkscape:grid
+       opacity="1"
+       color="#ff10d8"
+       spacingx="0.5"
+       spacingy="0.5"
+       id="grid846"
        type="xygrid" />
   </sodipodi:namedview>
   <defs
      id="defs7386">
-      <style
+    <linearGradient
+       inkscape:collect="always"
+       id="dark">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1216" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1218" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="light">
+      <stop
+         id="stop1204"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+      <stop
+         id="stop1202"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <style
        type="text/css"
        id="current-color-scheme">      .ColorScheme-Text {
         color:#31363b;
@@ -72,38 +103,27 @@
         color:#eff0f1;
         stop-color:#eff0f1;
       }</style>
-  <g class="ColorScheme-Background">
+    <g
+       class="ColorScheme-Background"
+       id="g9" />
     <linearGradient
-       id="inverse"
-       inkscape:collect="always">
-      <stop
-         id="stop1012"
-         offset="0"
-         style="stop-color:currentColor;stop-opacity:0;" />
-      <stop
-         id="stop1014"
-         offset="1"
-         style="stop-color:currentColor;stop-opacity:1;" />
-    </linearGradient>
-     </g>   
+       inkscape:collect="always"
+       xlink:href="#light"
+       id="linearGradient1208"
+       x1="27"
+       y1="27"
+       x2="6"
+       y2="6"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y2="3"
-       x2="3"
-       y1="30"
-       x1="30"
-       id="linearGradient1018"
-       xlink:href="#inverse"
-       inkscape:collect="always" />
-    <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y2="12"
-       x2="41"
-       y1="31"
-       x1="60"
-       id="linearGradient1028"
-       xlink:href="#inverse"
-       inkscape:collect="always" />
+       inkscape:collect="always"
+       xlink:href="#dark"
+       id="linearGradient1222"
+       x1="27"
+       y1="27"
+       x2="6"
+       y2="6"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      id="start-here-kde">
@@ -117,39 +137,24 @@
     <path
        class="ColorScheme-Text"
        sodipodi:nodetypes="sscccscccssccsscccccsscc"
-       d="M 5,3 C 3.892,3 3,3.892 3,5 V 15.996094 L 16,16 V 3 Z M 17,3 V 16 H 30 V 5 C 30,3.892 29.108,3 28,3 Z M 3,17 v 11 c 0,1.108 0.892,2 2,2 H 16 V 17 Z m 14,0 v 13 h 11 c 1.108,0 2,-0.892 2,-2 V 17 Z"
+       d="M 7.4999996,6 C 6.6689998,6 6,6.6689998 6,7.4999996 V 16 H 16 V 6 Z M 17,6 V 16 H 27 V 7.4999996 C 27,6.6689998 26.331,6 25.5,6 Z M 6,17 v 8.5 C 6,26.331 6.669,27 7.5,27 H 16 V 17 Z m 11,0 v 10 l 8.5,0 C 26.331,27 27,26.331 27,25.5 L 27,17 Z"
        style="fill:currentColor;fill-opacity:1;stroke-width:1.08333;stroke-linejoin:round"
        id="rect913" />
-    <path
-       id="path1002"
-       style="fill:url(#linearGradient1018);fill-opacity:1;stroke-width:1.08333;stroke-linejoin:round;opacity:0.3"
-       d="M 5,3 C 3.892,3 3,3.892 3,5 V 15.996094 L 16,16 V 3 Z M 17,3 V 16 H 30 V 5 C 30,3.892 29.108,3 28,3 Z M 3,17 v 11 c 0,1.108 0.892,2 2,2 H 16 V 17 Z m 14,0 v 13 h 11 c 1.108,0 2,-0.892 2,-2 V 17 Z"
-       sodipodi:nodetypes="sscccscccssccsscccccsscc" />
-  </g>
-  <g
-     id="22-22-start-here-kde">
-    <circle
-       style="opacity:0.003"
-       id="path822"
-       cx="49.972176"
-       cy="21"
-       r="12" />
     <g
-       transform="translate(1,-28)"
-       id="g266308">
+       id="blend"
+       style="opacity:0.75">
+      <path
+         id="path1212"
+         style="opacity:0.4;fill:url(#linearGradient1222);fill-opacity:1;stroke-width:1.08333;stroke-linejoin:round"
+         d="M 7.5,6 C 6.669,6 6,6.669 6,7.5 V 16 H 16 V 6 Z M 17,6 V 16 H 27 V 7.4999996 C 27,6.6689998 26.331,6 25.5,6 Z M 6,17 v 8.5 C 6,26.331 6.6689999,27 7.4999997,27 H 16 V 17 Z m 11,0 v 10 l 8.5,0 C 26.331,27 27,26.331 27,25.5 L 27,17 Z"
+         sodipodi:nodetypes="sscccscccssccsscccccsscc"
+         class="ColorScheme-Text" />
       <path
          class="ColorScheme-Text"
          sodipodi:nodetypes="sscccscccssccsscccccsscc"
-         transform="translate(-1,28)"
-         d="M 42.125,12 C 41.50175,12 41,12.50175 41,13.125 V 21 h 9 V 12 Z M 51,12 v 9 h 8.994141 L 60,13.125 C 60,12.50175 59.49825,12 58.875,12 Z M 41,22 v 7.875 C 41,30.49825 41.50175,31 42.125,31 H 50 v -9 z m 10,0 v 9 h 7.875 C 59.49825,31 60,30.49825 60,29.875 L 59.9941,22 Z"
-         style="opacity:1;fill:currentColor;fill-opacity:1;stroke-width:1.125;stroke-linejoin:round"
-         id="rect264457" />
-      <path
-         id="path1020"
-         style="opacity:0.3;fill:url(#linearGradient1028);fill-opacity:1;stroke-width:1.125;stroke-linejoin:round"
-         d="M 42.125,12 C 41.50175,12 41,12.50175 41,13.125 V 21 h 9 V 12 Z M 51,12 v 9 h 8.994141 L 60,13.125 C 60,12.50175 59.49825,12 58.875,12 Z M 41,22 v 7.875 C 41,30.49825 41.50175,31 42.125,31 H 50 v -9 z m 10,0 v 9 h 7.875 C 59.49825,31 60,30.49825 60,29.875 L 59.9941,22 Z"
-         transform="translate(-1,28)"
-         sodipodi:nodetypes="sscccscccssccsscccccsscc" />
+         d="M 7.5,6 C 6.669,6 6,6.669 6,7.5 V 16 H 16 V 6 Z M 17,6 V 16 H 27 V 7.5 C 27,6.669 26.331,6 25.5,6 Z M 6,17 v 8.5 C 6,26.331 6.669,27 7.5,27 H 16 V 17 Z m 11,0 v 10 l 8.5,0 C 26.331,27 27,26.331 27,25.5 L 27,17 Z"
+         style="opacity:0.3;fill:url(#linearGradient1208);fill-opacity:1;stroke-width:1.08333;stroke-linejoin:round"
+         id="path908" />
     </g>
   </g>
 </svg>
