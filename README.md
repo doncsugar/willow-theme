@@ -6,6 +6,8 @@ A Windows 11 style demo for KDE Plasma.
 ## Set-up
 Some of this may be automated in the future.
 
+This guide is meant for people that want to get the most out of this theme.
+
 ### Application Style
 **Lightly** will be needed for the blurred variant of this theme. You can view it and its installation instructions here: https://github.com/Luwx/Lightly
 * General
@@ -16,9 +18,9 @@ Some of this may be automated in the future.
 	* Drag the "Sidebars" slider to "Opaque"
 
 ### Icons
-This theme uses yeyushengfan258's Win11OS icon pack. You can download it in System Settings or manually install it from [here](https://www.pling.com/p/1546069/).
+This theme uses yeyushengfan258's Win11 icon pack. You can download it in System Settings or manually install it from [here](https://www.pling.com/p/1546069/).
 
-Icon packs are installed in your home directory at `~/.local/share/icons/`. Navigate to this folder and into the Win11OS folder. Go to `actions/22/` and copy the icons from this repository (located at `willow-icons/actions/22/`) into there. Reapply the icon pack and you should now have Willow's icons.
+Icon packs are installed in your home directory at `~/.local/share/icons/`. Navigate to this folder and into the Win11 folder. Go to `actions/22/` and copy the icons from this repository (located at `willow-icons/actions/22/`) into there. Reapply the icon pack and you should now have Willow's icons.
 
 Optionally, if you want thin arrows, you can copy the arrows in `22-optional-thin-arrows` into `actions/22/` instead.
 
@@ -54,10 +56,17 @@ I recommend the following only if you wish to sacrifice utility for aesthetics. 
 To get the look in the screenshot, open the hamburger menu and select "Configure Dolphin..." and then go to Startup > New windows > Check the "Make location bar editable" box.
 
 ### Window Decorations
-KDE has a theme engine called Aurorae. Like with the Plasma Style themes, it converts `.svg` files into UI elements. With some basic inkscape knowledge, you can make your own assets. Willow only comes with 3 available window buttons (minimize, maximize/restore, and close), but all of them are very easy to edit without a lot of work. Do not change anything inside the document page. You can read about the available buttons [here](https://techbase.kde.org/User:Mgraesslin/Aurorae#Buttons).
+KDE has a theme engine called Aurorae. Like with the Plasma Style themes, it converts `.svg` files into UI elements. Themes are stored at `~/.local/share/aurorae/themes/`. With some basic Inkscape knowledge, you can make your own assets. Willow only comes with 3 available window buttons (minimize, maximize/restore, and close), but all of them are very easy to edit without a lot of work. Do not change anything inside the document page. You can read about the available buttons [here](https://techbase.kde.org/User:Mgraesslin/Aurorae#Buttons).
 
 To set up the window decorations, choose "blur" if you are using Lightly or just choose the regular one if you are using Breeze or other opaque theme. A decoration is also included for the "Lightly" color scheme.
 
 "Window border size:" should be set to "No Side Borders" for best results.
 
 Under the "Titlebar Buttons" tab, I have removed "More actions for this window" for the appearance in the screenshot. You can still access the actions by right-clicking the titlebar.
+
+*Tip: Until Aurorae gets support for a blur mask, you can reduce the "Korners" bug by turning down the Blur effect in System Settings at Workspace Behavior > Desktop Effects and it will be under the Appearance header. For opaque themes, you can just uncheck Blur.*
+
+### Plasma Style
+KDE's Plasma desktop uses `.svg` files to draw UI elements. This includes your panel/taskbar and analog clock. Themes are stored in `~/.local/share/plasma/desktoptheme/`. To change the appearance of a Plasma Style, you can swap assets from different themes. If you know how to use Inkscape, you can make your own custom theme by following this tutorial [here](https://develop.kde.org/docs/plasma/theme/quickstart/).
+
+To have larger icons on your panel, set the height to 56px or go to the plasma theme's `readme.txt` to see available alternate versions of a file [e.g. here](https://github.com/doncsugar/willow-theme/tree/main/plasma-style/WillowDark).
