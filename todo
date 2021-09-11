@@ -1,0 +1,18 @@
+PLASMA
++ remove outline on progress indicator
++ consider updating keyboard icon
++ make high-res notification icon
++ make high-res media icon
++ revise wifi icon/ make high-res variants
++ make an update icon
++ consider an ALT for left and right panel placements
++ revise audio icons
+
+LOCKSCREEN
++ add power options
+
+SPLASHSCREEN
++ choose between windows 11 style or static, blurred wallpaper
+
+SDDM
++ embed theme components without requiring root like with synchronize
