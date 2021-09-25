@@ -1,4 +1,6 @@
 PLASMA
++ determine if panel and tooltips require insets
+
 + remove outline on progress indicator
 + consider updating keyboard icon
 + make high-res notification icon
