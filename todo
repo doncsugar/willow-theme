@@ -1,5 +1,6 @@
 PLASMA
 + determine if panel and tooltips require insets
++ check if changes to dark slider.svg need to be reverted
 
 + remove outline on progress indicator
 + consider updating keyboard icon
