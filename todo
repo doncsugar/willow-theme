@@ -2,6 +2,7 @@ PLASMA
 + determine if panel and tooltips require insets
 + check if changes to dark slider.svg need to be reverted
 + check is vertical slider handle is not named in xml
++ fix slider base center's fill
 
 + remove outline on progress indicator
 + consider updating keyboard icon
