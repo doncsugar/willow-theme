@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   sodipodi:docname="close.svg"
+   sodipodi:docname="minimize.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    id="svg1067"
    version="1.1"
@@ -321,14 +321,13 @@
        r="0.39687479" />
   </defs>
   <sodipodi:namedview
-     inkscape:object-nodes="true"
      inkscape:snap-grids="true"
      inkscape:snap-nodes="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox="true"
-     inkscape:snap-midpoints="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:snap-intersection-paths="true"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-intersection-paths="false"
      inkscape:object-paths="false"
      units="px"
      inkscape:window-maximized="1"
@@ -340,9 +339,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="-131.62499"
-     inkscape:cx="-14.749999"
-     inkscape:zoom="4.0000002"
+     inkscape:cy="-65.875001"
+     inkscape:cx="123.75"
+     inkscape:zoom="4"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1.0"
@@ -353,11 +352,6 @@
     <inkscape:grid
        id="grid1648"
        type="xygrid" />
-    <inkscape:grid
-       type="xygrid"
-       id="grid957"
-       spacingy="0.13229167"
-       spacingx="0.13229167" />
   </sodipodi:namedview>
   <metadata
      id="metadata1064">
@@ -367,6 +361,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -457,53 +452,46 @@
       <rect
          y="-9.1848211"
          x="0.98617435"
-         height="7.2571421"
-         width="9.140152"
+         height="7.2571406"
+         width="9.140151"
          id="rect896"
-         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.30783" />
+         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723" />
     </g>
     <g
        id="activated-base"
        transform="matrix(1.1578947,0,0,0.87500003,-13.841887,-8.0367179)">
       <rect
-         style="fill:#c42b1c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26286"
-         id="rect2141"
+         style="opacity:0.1;fill:#000000;fill-opacity:1"
+         id="rect986"
          width="9.140152"
-         height="7.257143"
+         height="7.2571425"
          x="0.98617518"
          y="-19.238989"
-         rx="1.0282677"
-         ry="1.3607141" />
+         class="ColorScheme-Text"
+         rx="0.90714335"
+         ry="1.2095243" />
     </g>
     <g
        id="pressed-base"
        transform="matrix(1.1578947,0,0,0.87500004,-13.841887,-9.3596336)">
       <rect
-         style="fill:#c42b1c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26286"
-         id="rect2141-6"
-         width="9.140151"
-         height="7.257144"
-         x="0.98617518"
          y="-29.822323"
-         rx="1.0282668"
-         ry="1.3592255" />
-      <rect
-         style="opacity:0.1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26286"
-         id="rect4057"
+         x="0.98617518"
+         height="7.2571402"
          width="9.140152"
-         height="7.2571435"
-         x="0.98617518"
-         y="-29.822323"
-         rx="1.0282677"
-         ry="1.360714" />
+         id="rect1130"
+         style="opacity:0.25;fill:#000000;fill-opacity:1"
+         class="ColorScheme-Text"
+         ry="1.2095246"
+         rx="0.91401571" />
     </g>
     <rect
        y="-45.508331"
        x="-12.7"
-       height="6.3499999"
+       height="6.3500004"
        width="10.583333"
        id="disabled-base"
-       style="opacity:0.003;fill:#808080;fill-opacity:1;stroke-width:0.309849" />
+       style="opacity:0.003;fill:#808080;fill-opacity:1;stroke-width:0.35101" />
     <g
        id="templateIcons">
       <g
@@ -666,11 +654,16 @@
          width="5.8208332"
          id="rect1681-2"
          style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.220007" />
-      <path
+      <rect
          class="ColorScheme-Text"
-         id="path954-3"
-         style="fill:#ffffff;fill-opacity:1"
-         d="m 25.531259,-17.991669 c -0.03397,0 -0.06819,0.01276 -0.09405,0.03876 l -1.09709,1.097091 -1.098125,-1.097091 c -0.05148,-0.05063 -0.134038,-0.05063 -0.185518,0 -0.05063,0.05148 -0.05063,0.134039 0,0.185519 l 1.098641,1.098641 -1.097091,1.098124 c -0.05063,0.05148 -0.05063,0.13404 0,0.185518 0.05148,0.05063 0.13404,0.05063 0.185518,0 l 1.098125,-1.09709 1.09709,1.09709 c 0.05172,0.05199 0.135866,0.05199 0.187586,0 0.05063,-0.05148 0.05063,-0.13404 0,-0.185518 l -1.098124,-1.098124 1.096573,-1.098641 c 0.05063,-0.05148 0.05063,-0.134039 0,-0.185519 -0.02586,-0.026 -0.05957,-0.03876 -0.09353,-0.03876 z" />
+         ry="0.13229166"
+         rx="0.13229166"
+         y="-16.668749"
+         x="23.018751"
+         height="0.26458332"
+         width="2.6458333"
+         id="rect944"
+         style="fill:#262626;fill-opacity:1" />
     </g>
     <use
        x="0"
@@ -898,10 +891,15 @@
          width="5.8208327"
          id="rect1681-2-6-9"
          style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.220007" />
-      <path
-         d="m 31.616921,-23.547916 c -0.03397,0 -0.06819,0.01276 -0.09405,0.03876 l -1.09709,1.097091 -1.098125,-1.097091 c -0.05148,-0.05063 -0.134038,-0.05063 -0.185518,0 -0.05063,0.05148 -0.05063,0.134039 0,0.185519 l 1.098641,1.098641 -1.097091,1.098124 c -0.05063,0.05148 -0.05063,0.13404 0,0.185518 0.05148,0.05063 0.13404,0.05063 0.185518,0 l 1.098125,-1.09709 1.09709,1.09709 c 0.05172,0.05199 0.135866,0.05199 0.187586,0 0.05063,-0.05148 0.05063,-0.13404 0,-0.185518 l -1.098124,-1.098124 1.096573,-1.098641 c 0.05063,-0.05148 0.05063,-0.134039 0,-0.185519 -0.02586,-0.026 -0.05957,-0.03876 -0.09353,-0.03876 z"
-         style="fill:#ffffff;fill-opacity:1"
-         id="path954-3-6"
+      <rect
+         style="fill:#262626;fill-opacity:1"
+         id="rect944-3"
+         width="2.6458333"
+         height="0.26458332"
+         x="29.104166"
+         y="-22.225"
+         rx="0.13229166"
+         ry="0.13229166"
          class="ColorScheme-Text" />
     </g>
     <g
@@ -914,10 +912,15 @@
          height="5.8208318"
          x="27.516666"
          y="-25.135416" />
-      <path
-         d="m 31.616922,-23.547916 c -0.03397,0 -0.06819,0.01276 -0.09405,0.03876 l -1.097091,1.097091 -1.098125,-1.097091 c -0.05148,-0.05063 -0.134038,-0.05063 -0.185517,0 -0.05063,0.05148 -0.05063,0.134039 0,0.185519 l 1.098641,1.098641 -1.097091,1.098124 c -0.05063,0.05148 -0.05063,0.13404 0,0.185518 0.05148,0.05063 0.13404,0.05063 0.185518,0 l 1.098125,-1.09709 1.09709,1.09709 c 0.05172,0.05199 0.135866,0.05199 0.187586,0 0.05063,-0.05148 0.05063,-0.13404 0,-0.185518 l -1.098124,-1.098124 1.096573,-1.098641 c 0.05063,-0.05148 0.05063,-0.134039 0,-0.185519 -0.02586,-0.026 -0.05957,-0.03876 -0.09353,-0.03876 z"
-         style="fill:#ffffff;fill-opacity:1"
-         id="path954-3-7"
+      <rect
+         style="fill:#262626;fill-opacity:1"
+         id="rect944-6"
+         width="2.6458333"
+         height="0.26458332"
+         x="29.104168"
+         y="-22.225"
+         rx="0.13229166"
+         ry="0.13229166"
          class="ColorScheme-Text" />
     </g>
     <g
@@ -930,15 +933,16 @@
          height="5.8208332"
          x="21.431252"
          y="-19.579166" />
-      <path
-         d="m 25.531508,-17.991666 c -0.03397,0 -0.06819,0.01276 -0.09405,0.03876 l -1.09709,1.097091 -1.098125,-1.097091 c -0.05148,-0.05063 -0.134039,-0.05063 -0.185519,0 -0.05063,0.05148 -0.05063,0.134039 0,0.185519 l 1.098642,1.098641 -1.097091,1.098124 c -0.05063,0.05148 -0.05063,0.13404 0,0.185518 0.05148,0.05063 0.13404,0.05063 0.185518,0 l 1.098125,-1.09709 1.09709,1.09709 c 0.05172,0.05199 0.135866,0.05199 0.187586,0 0.05063,-0.05148 0.05063,-0.13404 0,-0.185518 l -1.098124,-1.098124 1.096573,-1.098641 c 0.05063,-0.05148 0.05063,-0.134039 0,-0.185519 -0.02586,-0.026 -0.05957,-0.03876 -0.09353,-0.03876 z"
-         style="fill:#ffffff;opacity:0.1;fill-opacity:1"
-         id="path954-3-5"
+      <rect
+         style="opacity:0.1;fill:#262626;fill-opacity:1"
+         id="rect944-7"
+         width="2.6458333"
+         height="0.26458332"
+         x="23.018753"
+         y="-16.668749"
+         rx="0.13229166"
+         ry="0.13229166"
          class="ColorScheme-Text" />
     </g>
-    <path
-       d="m -19.314583,-25.135417 a 1.5875,1.5875 0 0 1 1.5875,1.5875 v -1.5875 z"
-       style="opacity:0.25;fill:#191919;stroke-width:0.264583;stroke-linejoin:round"
-       id="rect949-3" />
   </g>
 </svg>
