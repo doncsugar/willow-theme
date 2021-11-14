@@ -64,7 +64,9 @@ To set up the window decorations, choose "blur" if you are using Lightly or just
 
 Under the "Titlebar Buttons" tab, I have removed "More actions for this window" for the appearance in the screenshot. You can still access the actions by right-clicking the titlebar.
 
-*Tip: Until Aurorae gets support for a blur mask, you can reduce the "Korners" bug by turning down the Blur effect in System Settings at Workspace Behavior > Desktop Effects and it will be under the Appearance header. For opaque themes, you can just uncheck Blur.*
+*Tip: Until Aurorae gets support for a blur mask, you can fix the ["Korners" bug](https://bugs.kde.org/show_bug.cgi?id=395725) by using [a-parhom's fork of Lightly Shaders](https://github.com/a-parhom/LightlyShaders). Set the Window Decoration to "No borders" and remove "More actions for this window" to prevent clipping of the icon. Shader settings are in Workspace Behavior > Desktop Effects, under the "Appearance" section. Use roudness at 2 ticks with "Outline around window" checked.*
+
+*Using shaders can affect performance of games and other applications. For opaque themes, you can just uncheck Blur.*
 
 ### Plasma Style
 KDE's Plasma desktop uses `.svg` files to draw UI elements. This includes your panel/taskbar and analog clock. Themes are stored in `~/.local/share/plasma/desktoptheme/`. To change the appearance of a Plasma Style, you can swap assets from different themes. If you know how to use Inkscape, you can make your own custom theme by following this tutorial [here](https://develop.kde.org/docs/plasma/theme/quickstart/).
