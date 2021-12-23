@@ -1,8 +1,6 @@
 PLASMA
 + determine if panel and tooltips require insets
-+ shrink slider handle hint back
 
-+ remove outline on progress indicator
 + consider updating keyboard icon
 + make high-res notification icon
 + make high-res media icon
@@ -12,7 +10,6 @@ PLASMA
 + revise audio icons
 
 COLORS
-+ add glass version for Lightly
 + consider allowing blurred to match with default titlebar
 
 LOCKSCREEN
