@@ -116,4 +116,4 @@ activeBlend=32,32,32
 activeForeground=255,255,255
 inactiveBackground=25,25,25,204
 inactiveBlend=32,32,32
-inactiveForeground=112,125,138
+inactiveForeground=255,255,255
