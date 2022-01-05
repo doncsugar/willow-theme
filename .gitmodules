@@ -1,0 +1,3 @@
+[submodule "willow-icons/Fluent-icon-theme"]
+	path = willow-icons/Fluent-icon-theme
+	url = https://github.com/vinceliuice/Fluent-icon-theme

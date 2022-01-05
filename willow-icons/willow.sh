@@ -1,128 +1,86 @@
 #!/usr/bin/env bash
 
+#load in desired directories of icon resolutions e.g. 16, 22, 32, 64
+mapfile -t ICON_DIRECTORIES < "directoryList.txt"
 
+#load in list of undesired icons e.g. prevent theme from inheriting Papirus
+mapfile -t BANNED_ICONS < "removeList.txt"
 
+#names of the folders that iconpack will go into
 readonly ICONPACK_FOLDER_LIGHT="willow-icons-light"
 readonly ICONPACK_FOLDER_DARK="willow-icons-dark"
 
-readonly FLUENT_TARGET="src"
-
+#names of target directories e.g. Fluent's source and Willow's
+readonly FLUENT_TARGET="Fluent-icon-theme"
 readonly WILLOW_SOURCE="willow-src"
 
-#set target folder to light first
-ICONPACK_FOLDER="$ICONPACK_FOLDER_LIGHT"
-ICONPACK_COLOR="Light"
-
-#make willow light by copying over everything
-#copy over blank theme file
-#copy that to a willow dark
-#change name of willow light, change papirus dependency to be light
-#change name of willow dark, change papirus dependency to be dark
-
-function generateTarget {
-
-#clean and make iconpack from scratch
-rm -r "$ICONPACK_FOLDER"
-mkdir "$ICONPACK_FOLDER"
-
-#transfer svgs to new iconpack
-while read DIRECTORY
-do
-    mkdir $ICONPACK_FOLDER/$DIRECTORY/
-    cp -ar src/$DIRECTORY/actions $ICONPACK_FOLDER/$DIRECTORY/
-done < directoryList.txt
-
-#transfer links for identical icons to new iconpack
-while read DIRECTORY
-do
-    cp -ar links/$DIRECTORY/actions $ICONPACK_FOLDER/$DIRECTORY/
-done < directoryList.txt
-
-#remove problematic icons so Papirus can be inherited properly
-while read DIRECTORY
-do
-    while read ICON
-    do
-        rm $ICONPACK_FOLDER/$DIRECTORY/actions/$ICON
-    done < removeList.txt
-done < directoryList.txt
-
-#copy over willow's icons to new pack
-while read DIRECTORY
-do
-    cp -ar $WILLOW_SOURCE/* $ICONPACK_FOLDER
-done < directoryList.txt
-
-#copy over willow's theme file to inherit Papirus
-cp -ar $WILLOW_SOURCE/index.theme $ICONPACK_FOLDER
-
+function clearPack {
+    #deletes entire icon pack
+    rm --recursive -- "$1"
+    mkdir "$1"
 }
 
-generateTarget
+function actionsCopy {
+    #copies each selected actions/ directory from Fluent
+    for directory in "${ICON_DIRECTORIES[@]}"; do
+        mkdir $1/$directory/
+        cp -a $FLUENT_TARGET/src/$directory/actions $1/$directory/
+    done
+}
 
-#clean and make iconpack from scratch
-rm -r "$ICONPACK_FOLDER_DARK"
-mkdir "$ICONPACK_FOLDER_DARK"
-cp -ar "$ICONPACK_FOLDER"/* "$ICONPACK_FOLDER_DARK"
+function linksCopy {
+    #copies the links for the selected directories from Fluent
+    for directory in "${ICON_DIRECTORIES[@]}"; do
+        cp -a $FLUENT_TARGET/links/$directory/actions $1/$directory/
+    done
+}
 
-#Update theme color name and papirus dependency suffix for light version
-sed -i "s/%COLOR%/${ICONPACK_COLOR//-/ }/g"                                         "${ICONPACK_FOLDER_LIGHT}/index.theme"
+function removeBanned {
+    #removes icons that inhibit inheriting from Papirus
+    for directory in "${ICON_DIRECTORIES[@]}"; do
+        for icon in "${BANNED_ICONS[@]}"; do
+            rm -f $1/$directory/actions/$icon
+        done
+    done
+}
 
+function willowCopy {
+    #copies over willow's icons
+    for files in $WILLOW_SOURCE/* ; do
+        cp -a "$files" $1
+    done
+}
 
-#Switch dark to be target folder
-ICONPACK_FOLDER=$ICONPACK_FOLDER_DARK
-ICONPACK_COLOR="Dark"
-#Update dark versions colors in theme
-sed -i "s/%COLOR%/${ICONPACK_COLOR//-/ }/g"                                         "${ICONPACK_FOLDER_DARK}/index.theme"
-# generateTarget
+function lightToDark {
+    #inverts colors of svgs from dark (363636 to dedede)
+    sed -i "s/#363636/#dedede/g" "${1}"/{16,22,24,32}/actions/*.svg
+    #commented out until further notice since 16px icons will be full color
+    #sed -i "s/#363636/#dedede/g" "${1}"/{16,22,24}/{places,devices}/*.svg
+    sed -i "s/#363636/#dedede/g" "${1}"/symbolic/{actions,apps,categories,devices,emblems,emotes,mimetypes,places,status}/*.svg
+}
 
-#Update dark versions icons in theme
-sed -i "s/#363636/#dedede/g" "${ICONPACK_FOLDER}"/{16,22,24,32}/actions/*.svg
-sed -i "s/#363636/#dedede/g" "${ICONPACK_FOLDER}"/{16,22,24}/{places,devices}/*.svg
-sed -i "s/#363636/#dedede/g" "${ICONPACK_FOLDER}"/symbolic/{actions,apps,categories,devices,emblems,emotes,mimetypes,places,status}/*.svg
+function themeColor {
+    #sets the colors for the theme's index.theme name
+    sed -i "s/%COLOR%/${2//-/ }/g" "${1}/index.theme"
+}
 
+#make Willow Light
+clearPack $ICONPACK_FOLDER_LIGHT
+actionsCopy $ICONPACK_FOLDER_LIGHT
+linksCopy $ICONPACK_FOLDER_LIGHT
+removeBanned $ICONPACK_FOLDER_LIGHT
+willowCopy $ICONPACK_FOLDER_LIGHT
 
+#make Willow Dark
+clearPack $ICONPACK_FOLDER_DARK
+
+#lazily copy over light
+cp -a $ICONPACK_FOLDER_LIGHT/* $ICONPACK_FOLDER_DARK
+lightToDark $ICONPACK_FOLDER_DARK
+
+#name the themes their appropriate colors
+themeColor $ICONPACK_FOLDER_LIGHT "Light"
+themeColor $ICONPACK_FOLDER_DARK "Dark"
+
+echo done
 exit
-
-#clean and make iconpack from scratch
-rm -r $ICONPACK_FOLDER
-mkdir $ICONPACK_FOLDER
-
-#transfer svgs to new iconpack
-while read DIRECTORY
-do
-    mkdir $ICONPACK_FOLDER/$DIRECTORY/
-    cp -ar src/$DIRECTORY/actions $ICONPACK_FOLDER/$DIRECTORY/
-done < directoryList.txt
-
-#transfer links for identical icons to new iconpack
-while read DIRECTORY
-do
-    cp -ar links/$DIRECTORY/actions $ICONPACK_FOLDER/$DIRECTORY/
-done < directoryList.txt
-
-#remove problematic icons so Papirus can be inherited properly
-while read DIRECTORY
-do
-    while read ICON
-    do
-        rm $ICONPACK_FOLDER/$DIRECTORY/actions/$ICON
-    done < removeList.txt
-done < directoryList.txt
-
-#copy over willow's icons to new pack
-while read DIRECTORY
-do
-    cp -ar $WILLOW_SOURCE/* $ICONPACK_FOLDER
-done < directoryList.txt
-
-#copy over willow's theme file to inherit Papirus
-cp -ar $WILLOW_SOURCE/index.theme $ICONPACK_FOLDER
-
-# cp -ar links/* willow-icons
-#
-# cp -r 22/* willow-icons/22/actions
-#
-# cp -r 22-optional-thin-arrows/* willow-icons/22/actions
-#
-# cp index.theme willow-icons
