@@ -1,6 +1,6 @@
 There are alternative versions of assets in this theme. "ALT" is included in their name to distinguish them. Rename them so that they do not have "ALT" in their name and overwrite the original file to use them.
 
-Currently the available alternatives are:
+The files with alternatives are:
 
 tasks.svgz
 
@@ -8,4 +8,13 @@ Found in:
 
 widgets/
 
-Switching to the ALT will give you 32px icons on the task manager instead of 22p
+Switching to the ALT will give you 32px icons on the task manager instead of 22px
+
+
+update.svgz
+
+Found in:
+
+icons/
+
+The "up-to-date" checkmark icon is green instead of the text color
