@@ -1,8 +1,17 @@
 [ContrastEffect]
-contrast=1.2
 enabled=true
-intensity=.33
-saturation=1.5
+
+#latest values, used with 000000 60-70%
+#banding is still quite bad, but better than everything else
+contrast=.4
+intensity=.7
+saturation=4
+
+#old values, used with 666666 @ 25%
+# contrast=1.2
+# intensity=.33
+# saturation=1.5
+
 # contrast=1
 # enabled=true
 # intensity=-2
