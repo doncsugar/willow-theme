@@ -1,0 +1,15 @@
+preferences-system-splash
+preferences-system-windows
+cs-startup-programs
+preferences-system-users
+network-wired
+preferences-system-power
+preferences-system-bluetooth
+kdeconnect
+stock_lock
+system-log-out
+clock
+preferences-system-network-share-windows
+
+what does breeze's look like?
+filter dialog-filters

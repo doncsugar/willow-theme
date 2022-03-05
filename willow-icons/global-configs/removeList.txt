@@ -1,0 +1,7 @@
+preferences-system.svg
+user.svg
+preferences-desktop-notification-bell.svg
+preferences-desktop-user-password.svg
+drive-removable-media.svg
+audio-card.svg
+view-calendar-holiday.svg
