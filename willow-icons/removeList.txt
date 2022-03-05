@@ -1,4 +1,0 @@
-preferences-system.svg
-user.svg
-preferences-desktop-notification-bell.svg
-preferences-desktop-user-password.svg
