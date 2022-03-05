@@ -1,0 +1,14 @@
+<svg width="16" height="16" version="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a" x1="22" x2="9" y1="1" y2="18" gradientTransform="translate(-3,-3)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#ffa100" offset="0"/>
+   <stop style="stop-color:#ff5900" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m3 1c-1.108 0-2 0.892-2 2v10c0 1.108 0.892 2 2 2 0.74278 0 1.3874-0.40192 1.7324-1h6.5352c0.34498 0.59808 0.98965 1 1.7324 1 1.108 0 2-0.892 2-2v-10c0-1.108-0.892-2-2-2-0.74278 0-1.3874 0.40192-1.7324 1h-6.5352c-0.34498-0.59808-0.98965-1-1.7324-1zm0 2c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1zm10 0c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1zm-10 4c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1zm10 0c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1zm-10 4c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1zm10 0c0.554 0 1 0.446 1 1s-0.446 1-1 1-1-0.446-1-1 0.446-1 1-1z" style="fill:url(#a);paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+ <g transform="translate(-3,-3)">
+  <path d="m9 8.5 4.5 3-4.5 3z" style="opacity:.2"/>
+  <path transform="translate(3,3)" d="m5.9668 4.752a0.25002 0.25002 0 0 0-0.083984 0.027344 0.25002 0.25002 0 0 0-0.13281 0.2207v6a0.25002 0.25002 0 0 0 0.38867 0.20898l4.5-3a0.25002 0.25002 0 0 0 0-0.41797l-4.5-3a0.25002 0.25002 0 0 0-0.17188-0.039062z" style="opacity:.2"/>
+  <path d="m9 8 4.5 3-4.5 3z" style="fill:#fff"/>
+ </g>
+</svg>

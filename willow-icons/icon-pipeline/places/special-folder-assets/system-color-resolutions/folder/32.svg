@@ -1,0 +1,10 @@
+<svg width="32" height="32" version="1" xmlns="http://www.w3.org/2000/svg">
+ <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#ffffff; }</style>
+ <rect x="2" y="17.5" width="28" height="8" rx="2" ry="2" opacity=".2"/>
+ <path class="ColorScheme-Highlight" d="m4 2c-1.0965 0-2 0.90353-2 2v19c0 1.0965 0.90353 2 2 2h24c1.0965 0 2-0.90353 2-2v-16c0-1.0965-0.90353-2-2-2h-12c-2 0-2-3-5-3z" fill="currentColor"/>
+ <path d="m4 2.5c-1.0965 0-2 0.90353-2 2v5c0-1.0965 0.9035-2 2-2h8c2 0 1.4979-2 4-2h12c1.0965 0 2 0.9035 2 2v-0.5c0-1.0965-0.90353-2-2-2h-12c-2 0-2.5-2.5-5-2.5h-7z" style="fill:#808080;opacity:.2"/>
+ <path d="m28 6c1.0965 0 2 0.90353 2 2v15c0 1.0965-0.90353 2-2 2h-24c-1.0965 0-2-0.90353-2-2v-13c0-1.0965 0.90353-2 2-2h8c2 0 1.4979-2 4-2z" fill="#fff" opacity=".15"/>
+ <path d="m16 5.5c-2.5021 0-2 2-4 2h-8c-1.0965 0-2 0.9035-2 2v0.5c0-1.0965 0.90353-2 2-2h8c2 0 1.4979-2 4-2h12c1.0965 0 2 0.90353 2 2v-0.5c0-1.0965-0.9035-2-2-2z" style="opacity:.25"/>
+ <path d="m16 6c-2.5021 0-2 2-4 2h-8c-1.0965 0-2 0.9035-2 2v0.5c0-1.0965 0.90353-2 2-2h8c2 0 1.4979-2 4-2h12c1.0965 0 2 0.90353 2 2v-0.5c0-1.0965-0.9035-2-2-2h-12z" style="fill:#fff;opacity:.2"/>
+ <path d="m4 2c-1.0965 0-2 0.90353-2 2v0.5c0-1.0965 0.9035-2 2-2h7c2.5 0 3 2.5 5 2.5-2 0-2-3-5-3z" style="fill:#fff;opacity:.2"/>
+</svg>

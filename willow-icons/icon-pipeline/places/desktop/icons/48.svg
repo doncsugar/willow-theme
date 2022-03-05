@@ -1,0 +1,39 @@
+<svg width="48" height="48" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#3daee9; } .ColorScheme-Background { color:#eff0f1; } .ColorScheme-Text { color:#31363b; }</style>
+  <g class="ColorScheme-Highlight">
+   <linearGradient id="c" x1="4" x2="44" y1="7" y2="39" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor;stop-opacity:.75" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.25" offset="1"/>
+   </linearGradient>
+   <linearGradient id="a" x1="4" x2="44" y1="37.5" y2="37.5" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.3" offset="1"/>
+   </linearGradient>
+  </g>
+ </defs>
+ <rect x="4" y="31" width="40" height="9" rx="2.5" ry="2.5" opacity=".2"/>
+ <path class="ColorScheme-Background" d="m6.5 7c-1.3706 0-2.5 1.1294-2.5 2.5v27c0 1.3706 1.1294 2.5 2.5 2.5h35c1.3706 0 2.5-1.1294 2.5-2.5v-23c0-1.3706-1.1294-2.5-2.5-2.5h-17.5c-3 0-3-4-7-4z" style="fill:currentColor"/>
+ <path class="ColorScheme-Text" d="m6.5 7c-1.3706 0-2.5 1.1294-2.5 2.5v27c0 1.3706 1.1294 2.5 2.5 2.5h35c1.3706 0 2.5-1.1294 2.5-2.5v-23c0-1.3706-1.1294-2.5-2.5-2.5h-17.5c-3 0-3-4-7-4z" style="fill:currentColor;opacity:.025"/>
+ <path d="m6.5 7c-1.3706 0-2.5 1.1294-2.5 2.5v27c0 1.3706 1.1294 2.5 2.5 2.5h35c1.3706 0 2.5-1.1294 2.5-2.5v-23c0-1.3706-1.1294-2.5-2.5-2.5h-17.5c-3 0-3-4-7-4z" style="fill:url(#c)"/>
+ <path d="m41.5 13c1.3706 0 2.5 1.1294 2.5 2.5v21c0 1.3706-1.1294 2.5-2.5 2.5h-35c-1.3706 0-2.5-1.1294-2.5-2.5v-18c0-1.3706 1.1294-2.5 2.5-2.5h10.5c4 0 3-3 7-3z" fill="#fff" opacity=".15"/>
+ <path d="m24 13c-4 0-3 3-7 3h-10.5c-1.3706 0-2.5 1.1294-2.5 2.5v1c0-1.3706 1.1294-2.5 2.5-2.5h10.5c4 0 3-3 7-3h17.5c1.3706 0 2.5 1.1294 2.5 2.5v-1c0-1.3706-1.1294-2.5-2.5-2.5z" style="fill:#fff;opacity:.2"/>
+ <path d="m6.5 8c-1.3706 0-2.5 1.1294-2.5 2.5v7c0-1.3706 1.1294-2.5 2.5-2.5h10.5c4 0 3-3 7-3h17.5c1.3706 0 2.5 1.1294 2.5 2.5v-1c0-1.3706-1.1294-2.5-2.5-2.5h-17.5c-3 0-3-3-7-3h-10.5z" style="fill:#808080;opacity:.2"/>
+ <path d="m24 12c-4 0-3 3-7 3h-10.5c-1.3706 0-2.5 1.1294-2.5 2.5v1c0-1.3706 1.1294-2.5 2.5-2.5h10.5c4 0 3-3 7-3h17.5c1.3706 0 2.5 1.1294 2.5 2.5v-1c0-1.3706-1.1294-2.5-2.5-2.5z" style="opacity:.25"/>
+ <path d="m6.5 7c-1.3706 0-2.5 1.1294-2.5 2.5v1c0-1.3706 1.1294-2.5 2.5-2.5h10.5c4 0 4 3 7 3-3 0-3-4-7-4z" style="fill:#fff;opacity:.2"/>
+ <path class="ColorScheme-Background" d="m4 36v0.5c0 1.3706 1.1294 2.5 2.5 2.5h35c1.3706 0 2.5-1.1294 2.5-2.5v-0.5h-40z" style="fill:currentColor;opacity:.9"/>
+ <path d="m4 36v0.5c0 1.3706 1.1294 2.5 2.5 2.5h35c1.3706 0 2.5-1.1294 2.5-2.5v-0.5h-40z" style="fill:url(#a);opacity:.2"/>
+ <path d="m8 21c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1zm0 5c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1z" style="opacity:.2"/>
+ <path d="m8 19.5c-0.82235 0-1.5 0.67765-1.5 1.5v1c0 0.82235 0.67765 1.5 1.5 1.5h1c0.82235 0 1.5-0.67765 1.5-1.5v-1c0-0.82235-0.67765-1.5-1.5-1.5zm0 5c-0.82235 0-1.5 0.67765-1.5 1.5v1c0 0.82235 0.67765 1.5 1.5 1.5h1c0.82235 0 1.5-0.67765 1.5-1.5v-1c0-0.82235-0.67765-1.5-1.5-1.5z" style="opacity:.2"/>
+ <path d="m8 20c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1zm0 5c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1z" style="fill:#fff"/>
+ <g class="ColorScheme-Text" transform="translate(-18,-11)" style="fill:currentColor">
+  <rect x="56" y="48" width="1" height="1"/>
+  <rect x="58" y="48" width="1" height="1"/>
+  <rect x="25" y="48" width="1" height="1"/>
+  <rect x="41" y="48" width="1" height="1"/>
+  <rect x="43" y="48" width="1" height="1"/>
+  <rect x="45" y="48" width="1" height="1"/>
+  <rect x="39" y="48" width="1" height="1"/>
+  <rect x="37" y="48" width="1" height="1"/>
+ </g>
+</svg>

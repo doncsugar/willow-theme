@@ -1,0 +1,32 @@
+<svg width="64" height="64" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
+            color:#31363b;
+        }
+        .ColorScheme-Background {
+        color:#eff0f1;
+        }
+        .ColorScheme-Highlight {
+        color:#3daeff;
+        }</style>
+ </defs>
+ <path d="m4 16v34c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-34z" style="opacity:.2"/>
+ <path class="ColorScheme-Text" d="m4 15v34c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-34z" style="fill:currentColor"/>
+ <path class="ColorScheme-Highlight" d="m4 15v34c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-34z" style="fill:currentColor;opacity:.4"/>
+ <rect x="4" y="15" width="56" height="1" style="fill:#fff;opacity:.1;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.8284"/>
+ <g transform="matrix(2.363 0 0 2.363 12.015 9.3958)">
+  <g transform="matrix(1.0227 0 0 1.0227 -.5 -1.0844)">
+   <circle cx="16" cy="16.414" r="6" style="opacity:.2"/>
+   <circle class="ColorScheme-Background" cx="16" cy="16" r="6" style="fill:currentColor"/>
+   <circle class="ColorScheme-Highlight" cx="16" cy="16" r="6" style="fill:currentColor;opacity:.5"/>
+  </g>
+  <path class="ColorScheme-Text" d="m14.806 11.259v3.8088h-1.6928l2.7508 2.9624 2.7508-2.9624h-1.6928v-3.8088zm-2.5392 6.7712v1.2696h7.1944v-1.2696z" style="fill:currentColor"/>
+  <path class="ColorScheme-Highlight" d="m14.806 11.259v3.8088h-1.6928l2.7508 2.9624 2.7508-2.9624h-1.6928v-3.8088zm-2.5392 6.7712v1.2696h7.1944v-1.2696z" style="fill:currentColor;opacity:.15"/>
+ </g>
+ <g transform="translate(63,1.25)">
+  <path d="m-39 6.75c-1.6569 0-3 1.3431-3 3v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10h16v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10c0-1.6569-1.3431-3-3-3z" style="opacity:.2"/>
+  <path class="ColorScheme-Highlight" d="m-39 5.75c-1.6569 0-3 1.3431-3 3v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10h16v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10c0-1.6569-1.3431-3-3-3z" style="fill:currentColor"/>
+  <path class="ColorScheme-Text" d="m-39 5.75c-1.6569 0-3 1.3431-3 3v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10h16v10c0 0.831 0.669 1.5 1.5 1.5s1.5-0.669 1.5-1.5v-10c0-1.6569-1.3431-3-3-3z" style="fill:currentColor;opacity:.15"/>
+  <path transform="translate(-63,-1.25)" d="m24 7c-1.6569 0-3 1.3431-3 3v1c0-1.6569 1.3431-3 3-3h16c1.6569 0 3 1.3431 3 3v-1c0-1.6569-1.3431-3-3-3h-16z" style="fill:#fff;opacity:.1"/>
+ </g>
+</svg>

@@ -1,0 +1,13 @@
+xfce-system-settings
+systemsettings
+gnome-settings
+kcontrol
+org.xfce.settings.manager
+xfce4-mcs-manager
+preferences-system
+yast-powertweak
+org.gnome.Settings
+computersettings
+gnome-control-center
+package_settings
+utilities-tweak-tool

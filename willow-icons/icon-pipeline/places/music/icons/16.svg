@@ -1,0 +1,13 @@
+<svg width="16" height="16" version="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a" x1="6" x2="22" y1="6" y2="22" gradientTransform="translate(-3,-3)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#80d9ab" offset="0"/>
+   <stop style="stop-color:#2fa2b8" offset="1"/>
+  </linearGradient>
+ </defs>
+ <rect width="16" height="16" rx="8" ry="8" style="fill:url(#a);paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+ <g transform="translate(-3,-3)">
+  <path d="m14.965 5.752-7 1c-0.12345 0.017545-0.2151 0.12336-0.21484 0.24805v4.791c-0.084248-0.012206-0.16283-0.041016-0.25-0.041016-0.96517 0-1.75 0.78482-1.75 1.75s0.78483 1.75 1.75 1.75 1.75-0.78482 1.75-1.75v-4.4258l4.5-0.64258v2.3594c-0.084248-0.012206-0.16283-0.041016-0.25-0.041016-0.96518 0-1.75 0.78482-1.75 1.75s0.78482 1.75 1.75 1.75 1.75-0.78482 1.75-1.75v-6.5c3.06e-4 -0.15226-0.1344-0.26944-0.28516-0.24805z" style="opacity:.2"/>
+  <path d="m15 6-7 1v5.084c-0.15611-0.054775-0.32471-0.083984-0.5-0.083984-0.831 0-1.5 0.669-1.5 1.5s0.669 1.5 1.5 1.5 1.5-0.669 1.5-1.5v-4.6426l5-0.71484v2.9414c-0.15611-0.054775-0.32471-0.083984-0.5-0.083984-0.831 0-1.5 0.669-1.5 1.5s0.669 1.5 1.5 1.5 1.5-0.669 1.5-1.5v-4.5z" style="-inkscape-stroke:none;color:#000000;fill:#fff;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:.5"/>
+ </g>
+</svg>

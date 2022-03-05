@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="22"
+   height="22"
+   version="1"
+   id="svg16"
+   sodipodi:docname="software-store.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="8.484375"
+     inkscape:cy="6.421875"
+     inkscape:window-width="1440"
+     inkscape:window-height="823"
+     inkscape:window-x="0"
+     inkscape:window-y="768"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10395"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid835" />
+  </sodipodi:namedview>
+  <defs
+     id="defs14">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+        .ColorScheme-Text {
+            color:#31363b;
+        }
+        .ColorScheme-Background {
+        color:#eff0f1;
+        }
+        .ColorScheme-Highlight {
+        color:#3daeff;
+        }
+    </style>
+  </defs>
+  <path
+     id="path935-7"
+     d="m 1,4.5 v 14 c 0,1.108 0.892,2 2,2 h 17 c 0.554,0 1,-0.446 1,-1 v -15 z"
+     sodipodi:nodetypes="csssscc"
+     style="opacity:0.2" />
+  <g
+     id="g933">
+    <path
+       id="path4"
+       class="ColorScheme-Text"
+       d="m 1,4 v 14 c 0,1.108 0.892,2 2,2 h 16 c 1.108,0 2,-0.892 2,-2 V 4 Z"
+       fill="currentColor"
+       sodipodi:nodetypes="csssscc" />
+    <path
+       id="path935"
+       style="opacity:0.5;fill:currentColor"
+       class="ColorScheme-Highlight"
+       d="m 1,4 v 14 c 0,1.108 0.892,2 2,2 h 17 c 0.554,0 1,-0.446 1,-1 V 4 Z"
+       sodipodi:nodetypes="csssscc" />
+  </g>
+  <path
+     id="path9789"
+     d="m 8,1.5 a 1,1 0 0 0 -1,1 V 6.0253906 C 7.0129117,6.2817593 7.2182407,6.4870883 7.4746094,6.5 h 0.050781 C 7.7817593,6.4870883 7.9870883,6.2817593 8,6.0253906 V 2.5 h 6 V 6.0253906 C 14.012912,6.2817593 14.218241,6.4870883 14.474609,6.5 h 0.05078 C 14.781759,6.4870883 14.987088,6.2817593 15,6.0253906 V 2.5 a 1,1 0 0 0 -1,-1 z"
+     style="opacity:0.2" />
+  <g
+     id="g10395">
+    <path
+       id="path935-3"
+       style="opacity:1;fill:currentColor"
+       class="ColorScheme-Highlight"
+       d="M 8 1 A 1 1 0 0 0 7 2 L 7 5.5253906 C 7.0129117 5.7817593 7.2182407 5.9870883 7.4746094 6 L 7.5253906 6 C 7.7817593 5.9870883 7.9870883 5.7817593 8 5.5253906 L 8 2 L 14 2 L 14 5.5253906 C 14.012912 5.7817593 14.218241 5.9870883 14.474609 6 L 14.525391 6 C 14.781759 5.9870883 14.987088 5.7817593 15 5.5253906 L 15 2 A 1 1 0 0 0 14 1 L 8 1 z " />
+    <path
+       id="path10397"
+       style="opacity:0.15;fill:currentColor"
+       class="ColorScheme-Text"
+       d="M 8 1 A 1 1 0 0 0 7 2 L 7 5.5253906 C 7.0129117 5.7817593 7.2182407 5.9870883 7.4746094 6 L 7.5253906 6 C 7.7817593 5.9870883 7.9870883 5.7817593 8 5.5253906 L 8 2 L 14 2 L 14 5.5253906 C 14.012912 5.7817593 14.218241 5.9870883 14.474609 6 L 14.525391 6 C 14.781759 5.9870883 14.987088 5.7817593 15 5.5253906 L 15 2 A 1 1 0 0 0 14 1 L 8 1 z " />
+  </g>
+  <g
+     id="g4964">
+    <circle
+       fill="currentColor"
+       cx="16"
+       cy="16"
+       r="6"
+       id="circle10"
+       class="ColorScheme-Background" />
+    <circle
+       fill="currentColor"
+       cx="16"
+       cy="16"
+       r="6"
+       id="circle4966"
+       class="ColorScheme-Highlight"
+       style="opacity:0.5" />
+  </g>
+  <g
+     id="g5351">
+    <path
+       id="path12"
+       d="M 15 12 L 15 14.984375 L 13 14.984375 L 16 19 L 19 15.015625 L 17 15.015625 L 17 12 L 16 12 L 15 12 z M 16 19 L 13 19 L 13 20 L 19 20 L 19 19 L 16 19 z "
+       class="ColorScheme-Text"
+       style="opacity:1"
+       fill="currentColor" />
+    <path
+       id="path5353"
+       d="M 15 12 L 15 14.984375 L 13 14.984375 L 16 19 L 19 15.015625 L 17 15.015625 L 17 12 L 16 12 L 15 12 z M 16 19 L 13 19 L 13 20 L 19 20 L 19 19 L 16 19 z "
+       class="ColorScheme-Highlight"
+       fill="currentColor"
+       style="opacity:0.15" />
+  </g>
+  <path
+     id="path6"
+     d="M 8 1 A 1 1 0 0 0 7 2 L 7 2.5 A 1 1 0 0 1 8 1.5 L 14 1.5 A 1 1 0 0 1 15 2.5 L 15 2 A 1 1 0 0 0 14 1 L 8 1 z M 1 4 L 1 4.5 L 7 4.5 L 7 4 L 1 4 z M 8 4 L 8 4.5 L 14 4.5 L 14 4 L 8 4 z M 15 4 L 15 4.5 L 21 4.5 L 21 4 L 15 4 z "
+     style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
+</svg>

@@ -1,0 +1,39 @@
+<svg width="64" height="64" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#3daee9; } .ColorScheme-Background { color:#eff0f1; } .ColorScheme-Text { color:#31363b; }</style>
+  <g class="ColorScheme-Highlight">
+   <linearGradient id="b" x1="4" x2="60" y1="44" y2="44" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.3" offset="1"/>
+   </linearGradient>
+   <linearGradient id="a" x1="4" x2="60" y1="8" y2="45" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor;stop-opacity:.75" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.25" offset="1"/>
+   </linearGradient>
+  </g>
+ </defs>
+ <rect x="4" y="43" width="56" height="9" rx="2.8" ry="2.8" opacity=".2"/>
+ <path class="ColorScheme-Background" d="m6.8008 8c-1.5512 0-2.8008 1.2496-2.8008 2.8008v37.398c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-32.398c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:currentColor"/>
+ <path class="ColorScheme-Text" d="M 6.8008,8 C 5.2496,8 4,9.2496 4,10.8008 v 34.199 H 60 V 15.8008 C 60,14.2496 58.7504,13 57.1992,13 H 30 C 26,13 26,8 20,8 Z" style="fill:currentColor;opacity:.025"/>
+ <path d="m6.8008 8c-1.5512 0-2.8008 1.2496-2.8008 2.8008v37.398c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-32.398c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:url(#a)"/>
+ <path class="ColorScheme-Background" d="m4 45v3.1992c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-3.1992z" style="fill:currentColor;opacity:.9"/>
+ <path d="m4 45v3.1992c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-3.1992z" style="fill:url(#b);opacity:.2"/>
+ <path d="m8 24c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1zm0 5c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1z" style="opacity:.2"/>
+ <path d="m8 22.5c-0.82235 0-1.5 0.67765-1.5 1.5v1c0 0.82235 0.67765 1.5 1.5 1.5h1c0.82235 0 1.5-0.67765 1.5-1.5v-1c0-0.82235-0.67765-1.5-1.5-1.5h-1zm0 5c-0.82235 0-1.5 0.67765-1.5 1.5v1c0 0.82235 0.67765 1.5 1.5 1.5h1c0.82235 0 1.5-0.67765 1.5-1.5v-1c0-0.82235-0.67765-1.5-1.5-1.5h-1z" style="opacity:.2"/>
+ <path d="m8 23c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1h-1zm0 5c-0.554 0-1 0.446-1 1v1c0 0.554 0.446 1 1 1h1c0.554 0 1-0.446 1-1v-1c0-0.554-0.446-1-1-1h-1z" style="fill:#fff"/>
+ <g class="ColorScheme-Text" style="fill:currentColor">
+  <rect x="52" y="47" width="2" height="2"/>
+  <rect x="6" y="47" width="2" height="2"/>
+  <rect x="31" y="47" width="2" height="2"/>
+  <rect x="35" y="47" width="2" height="2"/>
+  <rect x="27" y="47" width="2" height="2"/>
+  <rect x="23" y="47" width="2" height="2"/>
+  <rect x="39" y="47" width="2" height="2"/>
+  <rect x="56" y="47" width="2" height="2"/>
+ </g>
+ <path d="m6.8008 9c-1.5512 0-2.8008 1.2496-2.8008 2.8008v9c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:#808080;opacity:.2"/>
+ <path d="m32 15c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="opacity:.25"/>
+ <path d="m6.8008 8c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h13.199c6 0 6 5 10 5h27.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:#fff;opacity:.2"/>
+ <path d="m32 16c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="fill:#fff;opacity:.2"/>
+ <path d="m32 16c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v26.398c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-29.398c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="fill:#fff;opacity:.15"/>
+</svg>

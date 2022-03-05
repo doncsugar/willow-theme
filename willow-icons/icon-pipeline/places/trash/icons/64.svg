@@ -1,0 +1,20 @@
+<svg width="64" height="64" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="a" type="text/css">.ColorScheme-Highlight { color:#3daee9; } .ColorScheme-Background { color:#eff0f1; } .ColorScheme-Text { color:#31363b; }</style>
+ </defs>
+ <g transform="matrix(1.4349 0 0 1.4359 -109.4 -99.124)">
+  <g transform="matrix(1.4 0 0 1.4 76.6 69)">
+   <path d="m4.7231 4.5006h22.898l-1.4934 23.38h-20.409z" style="fill:#d3d9df;opacity:.85;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+   <path d="m4.7231 4.5006 0.99558 23.38h0.49779l-0.99558-23.38zm22.401 0-1.4934 23.38h0.49779l1.4934-23.38z" style="fill:#d3d9df;opacity:.85;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+   <path d="m4.7231 4.5006h22.898l-1.4934 23.38h-20.409z" style="fill:#d3d9df;opacity:.1;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+  </g>
+  <path d="m84.606 108.03v0.69642c0 1.1575 0.93182 2.0892 2.0893 2.0893l24.393 1e-3c1.1583 7e-5 2.2102-0.93863 2.0907-2.0907v-0.696z" style="fill:#9f9f9f;paint-order:markers stroke fill"/>
+  <g transform="matrix(2.266 0 0 2.266 73.972 64.137)">
+   <path d="m9.3008 8-0.5957 1.2148 1.7559 0.86328 0.53906-1.0781 1.6992-1zm-2.6016 5.3008 1.3008 2.6992h2.0137l-0.013672-2h-1.5zm7.8867-1.4551-1.7246 0.87891 0.63867 1.2754h-1.5v2h2l1.3008-2.6992z" style="fill:#0253de;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+   <path d="m10.51 8 1.3762 2.7625 1.2918 0.46949 0.45037-1.3406-0.92892-1.8914z" style="fill:#0460ff;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+   <path d="m12 14-1 1 1 1h2l0.96289-2z" style="fill:#0460ff;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+   <path d="m7.7473 11.164-1.0481 2.1368 1.0625 2.2051 1.7278-3.4708-0.40138-1.3208z" style="fill:#0460ff;paint-order:markers stroke fill;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
+  </g>
+  <rect x="81.122" y="72.515" width="36.239" height="2.7857" rx="1.3929" ry="1.3929" style="fill:#9f9f9f;paint-order:markers stroke fill"/>
+ </g>
+</svg>

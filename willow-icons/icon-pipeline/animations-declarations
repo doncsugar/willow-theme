@@ -1,0 +1,11 @@
+[24@2x/animations]
+Context=Animations
+Scale=2
+Size=24
+Type=Fixed
+
+[24@3x/animations]
+Context=Animations
+Scale=3
+Size=24
+Type=Fixed

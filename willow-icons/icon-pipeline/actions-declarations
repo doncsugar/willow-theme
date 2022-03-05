@@ -1,0 +1,87 @@
+# 16x16
+[16/actions]
+Context=Actions
+Size=16
+Type=Fixed
+
+# 22x22
+[22/actions]
+Context=Actions
+Size=22
+Type=Fixed
+
+# 24x24
+[24/actions]
+Context=Actions
+Size=24
+Type=Fixed
+
+# 32x32
+[32/actions]
+Context=Actions
+Size=32
+Type=Fixed
+
+# Symbolic
+[symbolic/actions]
+Context=Actions
+Size=16
+MinSize=16
+MaxSize=512
+Type=Scalable
+
+# 16x16@2x
+[16@2x/actions]
+Context=Actions
+Scale=2
+Size=16
+Type=Fixed
+
+# 22x22@2x
+[22@2x/actions]
+Context=Actions
+Scale=2
+Size=22
+Type=Fixed
+
+# 24x24@2x
+[24@2x/actions]
+Context=Actions
+Scale=2
+Size=24
+Type=Fixed
+
+# 32x32@2x
+[32@2x/actions]
+Context=Actions
+Scale=2
+Size=32
+Type=Fixed
+
+# 16x16@3x
+[16@3x/actions]
+Context=Actions
+Scale=3
+Size=16
+Type=Fixed
+
+# 22x22@3x
+[22@3x/actions]
+Context=Actions
+Scale=3
+Size=22
+Type=Fixed
+
+# 24x24@3x
+[24@3x/actions]
+Context=Actions
+Scale=3
+Size=24
+Type=Fixed
+
+# 32x32
+[32@3x/actions]
+Context=Actions
+Scale=3
+Size=32
+Type=Fixed

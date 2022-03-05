@@ -1,0 +1,21 @@
+<svg width="64" height="64" version="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#3daee9; }</style>
+  <linearGradient id="a">
+   <stop offset="0"/>
+   <stop style="stop-opacity:.5" offset="1"/>
+  </linearGradient>
+  <linearGradient id="b" x1="11" x2="11" y1="19" y2="1" gradientTransform="translate(21,32)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+  <linearGradient id="c" x1="11" x2="11" y1="8" y2="16" gradientTransform="translate(21,30)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+ </defs>
+ <rect x="4" y="43" width="56" height="9" rx="2.8" ry="2.8" opacity=".2"/>
+ <path d="m6.8008 8c-1.5512 0-2.8008 1.2496-2.8008 2.8008v37.398c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-32.398c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:#ffb004"/>
+ <path d="m6.8008 9c-1.5512 0-2.8008 1.2496-2.8008 2.8008v9c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:#808080;opacity:.2"/>
+ <path d="m32 15c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="opacity:.25"/>
+ <path d="m6.8008 8c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h13.199c6 0 6 5 10 5h27.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008h-27.199c-4 0-4-5-10-5z" style="fill:#fff;opacity:.2"/>
+ <path d="m32 16c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v1c0-1.5512 1.2496-2.8008 2.8008-2.8008h15.199c4 0 4-3 10-3h25.199c1.5512 0 2.8008 1.2496 2.8008 2.8008v-1c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="fill:#fff;opacity:.2"/>
+ <path d="m32 16c-6 0-6 3-10 3h-15.199c-1.5512 0-2.8008 1.2496-2.8008 2.8008v26.398c0 1.5512 1.2496 2.8008 2.8008 2.8008h50.398c1.5512 0 2.8008-1.2496 2.8008-2.8008v-29.398c0-1.5512-1.2496-2.8008-2.8008-2.8008z" style="fill:#fff;opacity:.15"/>
+ <path class="ColorScheme-Highlight" d="m21 33h22c2.77 0 5 2.23 5 5v13h-32v-13c0-2.77 2.23-5 5-5z" style="fill:currentColor"/>
+ <path class="ColorScheme-Text" d="m21 33h22c2.77 0 5 2.23 5 5v13h-32v-13c0-2.77 2.23-5 5-5z" style="fill:url(#b);opacity:.25"/>
+ <rect x="21" y="38" width="22" height="8" rx="2.75" ry="2.75" style="fill:url(#c);opacity:.25"/>
+</svg>

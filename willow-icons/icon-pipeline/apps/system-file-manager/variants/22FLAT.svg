@@ -1,0 +1,12 @@
+<svg width="22" height="22" version="1" xmlns="http://www.w3.org/2000/svg">
+ <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#3daee9; }</style>
+ <rect x="1" y="9.5" width="20" height="10" rx="2" ry="2" opacity=".2"/>
+ <path class="ColorScheme-Text" d="m3 3c-1.0965 0-2 0.90353-2 2v12c0 1.0965 0.90353 2 2 2h16c1.0965 0 2-0.90353 2-2v-10c0-1.0965-0.90353-2-2-2h-8c-2 0-1.4979-2-4-2z" fill="#ffb004"/>
+ <path d="m3 3c-1.0965 0-2 0.90353-2 2v4c0-1.0965 0.9035-2 2-2h4c2.5021 0 2-2 4-2-2 0-1.4979-2-4-2h-4z" fill="#808080" opacity=".2"/>
+ <path d="m9.9863 4.748c-0.91024 0.53497-1.034 1.752-2.9863 1.752h-4c-1.0965 0-2 0.90353-2 2v0.5c0-1.0965 0.9035-2 2-2h4c2.5021 0 2-2 4-2-0.44135 0-0.75684-0.10015-1.0137-0.25195z" opacity=".2"/>
+ <path d="m11 5c-2 0-1.4979 2-4 2h-4c-1.0965 0-2 0.90353-2 2v8c0 1.0965 0.90353 2 2 2h16c1.0965 0 2-0.90353 2-2v-10c0-1.0965-0.90353-2-2-2z" fill="#fff" opacity=".15"/>
+ <path d="m3 3c-1.0965 0-2 0.90353-2 2v0.5c0-1.0965 0.9035-2 2-2h4c1.9531 0 2.0753 1.2172 2.9863 1.752-0.90701 0.53611-1.0364 1.748-2.9863 1.748h-4c-1.0965 0-2 0.90353-2 2v0.5c0-1.0965 0.9035-2 2-2h4c2.5021 0 2-2 4-2h8c1.0965 0 2 0.9035 2 2v-0.5c0-1.0965-0.90353-2-2-2h-8c-2 0-1.4979-2-4-2h-4z" fill="#fff" opacity=".2"/>
+ <path class="ColorScheme-Highlight" d="m7 12h8c1.108 0 2 0.892 2 2v5h-12v-5c0-1.108 0.892-2 2-2z" style="color:#3daee9;fill:currentColor;stroke-width:1.0257"/>
+ <path d="m7 12h8c1.108 0 2 0.892 2 2v5h-12v-5c0-1.108 0.892-2 2-2z" style="opacity:.18;stroke-width:.55902"/>
+ <rect x="7" y="14" width="8" height="3" rx="1" ry="1" style="opacity:.18;stroke-width:.55902"/>
+</svg>

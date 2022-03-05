@@ -1,0 +1,26 @@
+<svg width="16" height="16" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
+            color:#31363b;
+        }
+        .ColorScheme-Background {
+        color:#eff0f1;
+        }
+        .ColorScheme-Highlight {
+        color:#3daeff;
+        }</style>
+ </defs>
+ <g transform="matrix(.75 0 0 .75 -12.75 .50001)">
+  <path class="ColorScheme-Text" d="m17 2v13.333c0 1.4774 1.1894 2.6667 2.6667 2.6667h14.667c1.4772 0 2.6663-1.1892 2.6663-2.6663v-13.334z" style="fill:currentColor"/>
+  <path class="ColorScheme-Highlight" d="m17 2v13.333c0 1.4774 1.1894 2.6667 2.6667 2.6667h14.667c1.4772 0 2.6663-1.1892 2.6663-2.6663v-13.334z" style="fill:currentColor;opacity:.4"/>
+ </g>
+ <path d="m5 0.5c-0.55228 0-1 0.44772-1 1v2.5c0.01291 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5h5v2.5c0.01291 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5c0-0.55228-0.44772-1-1-1z" style="opacity:.2"/>
+ <path class="ColorScheme-Highlight" d="m5 0c-0.55228 0-1 0.44772-1 1v2.5254c0.012912 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5254h5v2.5254c0.01291 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5254c0-0.55228-0.44772-1-1-1z" style="fill:currentColor"/>
+ <g transform="matrix(.75 0 0 .75 -12.5 1.0156)">
+  <circle class="ColorScheme-Background" cx="32" cy="14" r="6" style="fill:currentColor"/>
+  <circle class="ColorScheme-Highlight" cx="32" cy="14" r="6" style="fill:currentColor;opacity:.5"/>
+  <path class="ColorScheme-Text" d="m31.333 9.3125v2.6667h-2l2.6667 4 2.6667-4h-2v-2.6667zm-2.6667 6.6667v1.3333h6.6667v-1.3333z" style="fill:currentColor"/>
+ </g>
+ <path d="m24-1a1 1 0 0 0-1 1v0.5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v-0.5a1 1 0 0 0-1-1zm-7 3v0.5h6v-0.5zm7 0v0.5h6v-0.5zm7 0v0.5h6v-0.5z" style="fill:#fff;opacity:.1"/>
+ <path class="ColorScheme-Text" d="m5 0c-0.55228 0-1 0.44772-1 1v2.5254c0.012912 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5254h5v2.5254c0.01291 0.25637 0.21824 0.4617 0.47461 0.47461h0.05078c0.25637-0.012912 0.4617-0.21824 0.47461-0.47461v-2.5254c0-0.55228-0.44772-1-1-1z" style="fill:currentColor;opacity:.15"/>
+</svg>

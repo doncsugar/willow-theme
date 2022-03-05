@@ -1,0 +1,28 @@
+<svg width="16" height="16" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Highlight { color:#3daee9; } .ColorScheme-Background { color:#eff0f1; } .ColorScheme-Text { color:#31363b; }</style>
+  <g class="ColorScheme-Highlight">
+   <linearGradient id="a" x2="16" y1="12" y2="12" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.3" offset="1"/>
+   </linearGradient>
+   <linearGradient id="b" x2="16" y1="2" y2="14" gradientUnits="userSpaceOnUse">
+    <stop style="stop-color:currentColor;stop-opacity:.75" offset="0"/>
+    <stop style="stop-color:currentColor;stop-opacity:.25" offset="1"/>
+   </linearGradient>
+  </g>
+ </defs>
+ <rect class="ColorScheme-Background" y="2" width="16" height="12" rx="2" ry="2" style="fill:currentColor"/>
+ <rect class="ColorScheme-Text" y="2" width="16" height="12" rx="2" ry="2" style="fill:currentColor;opacity:.025"/>
+ <rect y="2" width="16" height="12" rx="2" ry="2" style="fill:#fff;opacity:.15"/>
+ <rect y="2" width="16" height="12" rx="2" ry="2" style="fill:url(#b)"/>
+ <path class="ColorScheme-Background" d="m0.26758 13c0.34498 0.59808 0.98965 1 1.7324 1h12c0.74278 0 1.3874-0.40192 1.7324-1h-15.465z" style="fill:currentColor;opacity:.9"/>
+ <path d="m0.26758 13c0.34498 0.59808 0.98965 1 1.7324 1h12c0.74278 0 1.3874-0.40192 1.7324-1h-15.465z" style="fill:url(#a);opacity:.2"/>
+ <g class="ColorScheme-Text" transform="translate(-1)">
+  <rect x="11" y="13" width="1" height="1" style="fill:currentColor;stroke-width:.5"/>
+  <rect x="13" y="13" width="1" height="1" style="fill:currentColor;stroke-width:.5"/>
+ </g>
+ <path d="m2.5 4.5c-0.277 0-0.5 0.223-0.5 0.5v1c0 0.277 0.223 0.5 0.5 0.5h1c0.277 0 0.5-0.223 0.5-0.5v-1c0-0.277-0.223-0.5-0.5-0.5zm0 3c-0.277 0-0.5 0.223-0.5 0.5v1c0 0.277 0.223 0.5 0.5 0.5h1c0.277 0 0.5-0.223 0.5-0.5v-1c0-0.277-0.223-0.5-0.5-0.5z" style="opacity:.2"/>
+ <path d="m2.5 3.75c-0.41118 0-0.75 0.33882-0.75 0.75v1c0 0.41118 0.33882 0.75 0.75 0.75h1c0.41118 0 0.75-0.33882 0.75-0.75v-1c0-0.41118-0.33882-0.75-0.75-0.75h-1zm0 3c-0.41118 0-0.75 0.33882-0.75 0.75v1c0 0.41118 0.33882 0.75 0.75 0.75h1c0.41118 0 0.75-0.33882 0.75-0.75v-1c0-0.41118-0.33882-0.75-0.75-0.75h-1z" style="opacity:.2"/>
+ <path d="m2.5 4c-0.277 0-0.5 0.223-0.5 0.5v1c0 0.277 0.223 0.5 0.5 0.5h1c0.277 0 0.5-0.223 0.5-0.5v-1c0-0.277-0.223-0.5-0.5-0.5h-1zm0 3c-0.277 0-0.5 0.223-0.5 0.5v1c0 0.277 0.223 0.5 0.5 0.5h1c0.277 0 0.5-0.223 0.5-0.5v-1c0-0.277-0.223-0.5-0.5-0.5h-1z" style="fill:#fff"/>
+</svg>
