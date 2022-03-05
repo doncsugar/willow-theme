@@ -1,1 +1,8 @@
  drive-removable-media.svg
+
+help-about.svg
+exifinfo.svg
+gnome-app-install-star.svg
+gtk-about.svg
+help-contextual.svg
+help-contents.svg
