@@ -54,6 +54,9 @@ SessionManagementScreen {
         Layout.fillWidth: true
 
         text: lastUserName
+
+        color: "white"
+
         visible: showUsernamePrompt
         focus: showUsernamePrompt && !lastUserName //if there's a username prompt it gets focus first, otherwise password does
         placeholderText: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Username")
@@ -62,6 +65,19 @@ SessionManagementScreen {
             if (root.loginScreenUiVisible) {
                 passwordBox.forceActiveFocus()
             }
+        background: TextFieldBackground {
+            sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/lineedit.svgz"
+            property int padding: 8
+        }
+
+        leftPadding: background.padding
+        topPadding: background.padding
+        rightPadding: background.padding
+        bottomPadding: background.padding
+        ////leftPadding: (true ? background.margins.left : 0) + (control.mirrored ? inlineButtonRow.width : 0)
+        ////topPadding: true ? background.margins.top : 0
+        ////rightPadding: (true ? background.margins.right : 0) + (control.mirrored ? 0 : inlineButtonRow.width)
+        ////bottomPadding: true ? background.margins.bottom : 0
     }
 
     RowLayout {
@@ -71,6 +87,8 @@ SessionManagementScreen {
             id: passwordBox
             font.pointSize: fontSize + 1
             Layout.fillWidth: true
+
+            color: "white"
 
             placeholderText: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Password")
             focus: !showUsernamePrompt || lastUserName
@@ -82,6 +100,16 @@ SessionManagementScreen {
                     startLogin();
                 }
             }
+
+            background: TextFieldBackground {
+                sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/lineedit.svgz"
+                property int padding: 8
+            }
+
+            leftPadding: background.padding
+            topPadding: background.padding
+            rightPadding: background.padding
+            bottomPadding: background.padding
 
             visible: root.showUsernamePrompt || userList.currentItem.needsPassword
 
@@ -117,10 +145,25 @@ SessionManagementScreen {
             Layout.preferredHeight: passwordBox.implicitHeight
             Layout.preferredWidth: text.length == 0 ? loginButton.Layout.preferredHeight : -1
 
-            icon.name: text.length == 0 ? (root.LayoutMirroring.enabled ? "go-previous" : "go-next") : ""
+            PlasmaCore.SvgItem {
+                opacity: parent.enabled ? 1 : 0.6
+                svg: PlasmaCore.Svg { imagePath: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/go.svgz" }
+                elementId: loginButton.text.length == 0 ? (root.LayoutMirroring.enabled ? "go-previous" : "go-next") : ""
+                anchors.centerIn: parent
+            }
 
             text: root.showUsernamePrompt || userList.currentItem.needsPassword ? "" : i18n("Log In")
             onClicked: startLogin();
+
+            background: ButtonBackground {
+                sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/button.svgz"
+                property int padding: 8
+            }
+
+            leftPadding: background.padding
+            topPadding: background.padding
+            rightPadding: background.padding
+            bottomPadding: background.padding
         }
     }
 }

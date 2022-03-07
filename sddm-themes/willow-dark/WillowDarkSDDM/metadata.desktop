@@ -1,0 +1,36 @@
+[ContrastEffect]
+enabled=true
+
+#latest values, used with 000000 60-70%
+#banding is still quite bad, but better than everything else
+contrast=.4
+intensity=.7
+saturation=4
+
+#old values, used with 666666 @ 25%
+# contrast=1.2
+# intensity=.33
+# saturation=1.5
+
+# contrast=1
+# enabled=true
+# intensity=-2
+# saturation=-1
+# set translucent background to FFFFFF at 5-10% opacity
+
+[Desktop Entry]
+Name=Willow Dark (SDDM)
+Comment=A Windows 11 style demo.
+X-KDE-PluginInfo-Author=doncsugar
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-Name=willow-dark-plasma
+X-KDE-PluginInfo-Version=.1
+X-KDE-PluginInfo-Website=https://www.pling.com/p/1563375/
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true
