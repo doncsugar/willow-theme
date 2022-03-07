@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Willow Light
+Description=A prototype SDDM theme
+Author=KDE VDG and doncsugar
+Copyright=
+License=GPLv3
+Type=sddm-theme
+Version=0.1
+Website=
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=
+Theme-Id=willow-light
+Theme-API=2.0
