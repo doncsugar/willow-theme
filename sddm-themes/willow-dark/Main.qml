@@ -12,6 +12,9 @@ import QtQuick.Controls 2.12 as QQC2
 import QtGraphicalEffects 1.0
 
 import org.kde.plasma.core 2.0 as PlasmaCore
+
+import org.kde.plasma.components 2.0 as PlasmaComponents2
+
 import org.kde.plasma.components 3.0 as PlasmaComponents3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 
@@ -556,10 +559,10 @@ PlasmaCore.ColorScope {
                 }
             }
 
-            PlasmaComponents3.ToolButton {
+            PlasmaComponents2.ToolButton {
                 text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to show/hide virtual keyboard", "Virtual Keyboard")
                 font.pointSize: config.fontSize
-                icon.name: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
+                iconSource: inputPanel.keyboardActive ? "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/input-keyboard-virtual-on.svgz" : "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/input-keyboard-virtual-off.svgz"
                 onClicked: inputPanel.showHide()
                 visible: inputPanel.status == Loader.Ready
 
