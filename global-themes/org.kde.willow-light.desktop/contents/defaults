@@ -2,16 +2,16 @@
 widgetStyle=Breeze
 
 [kdeglobals][General]
-ColorScheme=BreezeLight
+ColorScheme=WillowLightFauxMica
 
 [kdeglobals][Icons]
-Theme=breeze
+Theme=willow-icons-light
 
 [plasmarc][Theme]
-name=default
+name=willow-light-plasma
 
 [Wallpaper]
-Image=Next
+Image=Win11OS-light
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
@@ -26,4 +26,4 @@ LayoutName=org.kde.breeze.desktop
 library=org.kde.breeze
 
 [KSplash]
-Theme=org.kde.Breeze
+Theme=org.kde.willow-light.desktop

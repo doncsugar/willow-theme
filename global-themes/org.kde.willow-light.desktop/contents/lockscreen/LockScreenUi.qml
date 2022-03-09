@@ -255,20 +255,20 @@ PlasmaCore.ColorScope {
                 }
 
                 actionItems: [
-                    ActionButton {
-                        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Sleep")
-                        iconSource: "system-suspend"
-                        onClicked: root.suspendToRam()
-                        visible: root.suspendToRamSupported
-                        anchors.verticalCenter: parent.top
-                    },
-                    ActionButton {
-                        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Hibernate")
-                        iconSource: "system-suspend-hibernate"
-                        onClicked: root.suspendToDisk()
-                        visible: root.suspendToDiskSupported
-                        anchors.verticalCenter: parent.top
-                    },
+//                    ActionButton {
+//                        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Sleep")
+//                        iconSource: "system-suspend"
+//                        onClicked: root.suspendToRam()
+//                        visible: root.suspendToRamSupported
+//                        anchors.verticalCenter: parent.top
+//                    },
+//                    ActionButton {
+//                        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Hibernate")
+//                        iconSource: "system-suspend-hibernate"
+//                        onClicked: root.suspendToDisk()
+//                        visible: root.suspendToDiskSupported
+//                        anchors.verticalCenter: parent.top
+//                    },
                     ActionButton {
                         text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Switch User")
                         iconSource: "system-switch-user"
@@ -521,6 +521,9 @@ PlasmaCore.ColorScope {
             }
 
             PlasmaComponents3.ToolButton {
+                //align because power button sticks out
+                Layout.alignment: Qt.AlignBottom
+
                 focusPolicy: Qt.TabFocus
                 text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to show/hide virtual keyboard", "Virtual Keyboard")
                 icon.name: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
@@ -535,6 +538,9 @@ PlasmaCore.ColorScope {
             }
 
             PlasmaComponents3.ToolButton {
+                //align because power button sticks out
+                Layout.alignment: Qt.AlignBottom
+
                 focusPolicy: Qt.TabFocus
                 Accessible.description: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to change keyboard layout", "Switch layout")
                 icon.name: "input-keyboard"
@@ -557,6 +563,83 @@ PlasmaCore.ColorScope {
             }
 
             Battery {}
+
+            Item {
+                // Layout.alignment: Qt.AlignTop
+
+                id: powerMenuButton
+                //not sure what adding 2 does here, but it feels right
+                implicitHeight: (PlasmaCore.Units.gridUnit * 2) + 2
+                width: height
+                //icon for the button
+                PlasmaCore.IconItem {
+                    id: icon
+                    source: "system-shutdown"
+                    anchors.centerIn: parent
+
+                    width: parent.width
+                    height: width
+                    colorGroup: PlasmaCore.ColorScope.colorGroup
+                    //active: mouseArea.containsMouse || root.activeFocus
+                }
+                //replicating ActionButton, without label
+                Rectangle {
+                    anchors.centerIn: icon
+                    width: icon.width
+                    height: width
+                    radius: width / 2
+                    scale: mouseArea.containsPress ? 1 : 0
+                    color: PlasmaCore.ColorScope.textColor
+                    opacity: 0.15
+                    Behavior on scale {
+                            PropertyAnimation {
+                                duration: PlasmaCore.Units.shortDuration
+                                easing.type: Easing.InOutQuart
+                            }
+                    }
+                }
+                Rectangle {
+                    anchors.fill: icon
+                    radius: width / 2
+                    color: PlasmaCore.ColorScope.textColor
+                    opacity: mouseArea.containsMouse ? .15 : 0
+                    Behavior on opacity {
+                            PropertyAnimation {
+                                duration: PlasmaCore.Units.shortDuration
+                                easing.type: Easing.InOutQuart
+                            }
+                    }
+                }
+                MouseArea {
+                    id: mouseArea
+                    hoverEnabled: true
+                    //unsure why I can't use ternary to switch open and close. May be timing related?
+                    onClicked: menu.visible ? menu.close() : menu.open();
+                    onPositionChanged: fadeoutTimer.restart();
+                    anchors.fill: parent
+                }
+                //sooner or later I will pick 1 place to put all of these
+                PlasmaCore.ColorScope{
+                    colorGroup: PlasmaCore.Theme.ViewColorGroup
+                    PowerMenu {
+                        id: menu
+                        x: parent.x - width / 2 + parent.width / 2
+                        y: parent.y - height
+
+                        readonly property bool lightView: Math.max(PlasmaCore.ColorScope.backgroundColor.r, PlasmaCore.ColorScope.backgroundColor.g, PlasmaCore.ColorScope.backgroundColor.b) > 0.5
+                        backgroundColor: PlasmaCore.ColorScope.backgroundColor
+                        foregroundColor: PlasmaCore.ColorScope.textColor
+                        menuOpacity: lightView ? .8 : .6
+
+                        enter: Transition {
+                        NumberAnimation {property: "opacity"; from: 0.0; to: 1.0; duration: 100}
+                        }
+                        exit: Transition {
+                        NumberAnimation {property: "opacity"; from: 1.0; to: 0.0}
+                        }
+                    }
+                }
+            }
         }
     }
 
