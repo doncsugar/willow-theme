@@ -26,7 +26,7 @@ var layout = {
                     "ToolBoxButtonX": "319"
                 },
                 "/Wallpaper/org.kde.image/General": {
-                    "Image": "file:///usr/share/wallpapers/Next/contents/images/5120x2880.jpg"
+                    "Image": "Win11OS-light"
                 }
             },
             "wallpaperPlugin": "org.kde.image"
@@ -89,7 +89,7 @@ var layout = {
                             "DialogWidth": "720"
                         }
                     },
-                    "plugin": "com.github.zren.presentwindows"
+                    "plugin": "com.github.doncsugar.presentwindows"
                 },
                 {
                     "config": {
@@ -170,8 +170,7 @@ var layout = {
                             "DialogWidth": "720"
                         },
                         "/Configuration/General": {
-                            "click_action": "run_command",
-                            "click_command": "qdbus org.kde.kglobalaccel /component/kwin invokeShortcut \"Expose\"",
+
                             "hoveredColor": "#20ffffff",
                             "pressedColor": "#40ffffff",
                             "size": "8"
