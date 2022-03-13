@@ -15,15 +15,15 @@ saturation=2.8
 # saturation=2.0
 
 [Desktop Entry]
-Name=Willow Light
-Comment=A Windows 11 style demo.
+Name=Willow Light Small Icons
+Comment=Willow with smaller panel icons.
 X-KDE-PluginInfo-Author=doncsugar
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-Email=
 X-KDE-PluginInfo-EnabledByDefault=true
 X-KDE-PluginInfo-License=GPLv3
-X-KDE-PluginInfo-Name=willow-light-plasma
+X-KDE-PluginInfo-Name=willow-light-plasma-small-icons
 X-KDE-PluginInfo-Version=.1
 X-KDE-PluginInfo-Website=
 X-Plasma-API=5.0
