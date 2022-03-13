@@ -7,7 +7,6 @@ var layout = {
             ],
             "config": {
                 "/": {
-                    "ItemGeometries-1440x770": "",
                     "ItemGeometriesHorizontal": "",
                     "formfactor": "0",
                     "immutability": "1",
@@ -87,6 +86,9 @@ var layout = {
                         "/Configuration/ConfigDialog": {
                             "DialogHeight": "540",
                             "DialogWidth": "720"
+                        },
+                        "/Configuration/General": {
+                            "icon": "presentwindows-48px"
                         }
                     },
                     "plugin": "com.github.doncsugar.presentwindows"
@@ -151,6 +153,15 @@ var layout = {
                         "/": {
                             "immutability": "1"
                         },
+                        "/Configuration/Appearance": {
+                            "customDateFormat": "M/d/yyyy",
+                            "dateFormat": "custom",
+                            "enabledCalendarPlugins": "/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/holidaysevents.so"
+                        },
+                        "/Configuration/ConfigDialog": {
+                            "DialogHeight": "540",
+                            "DialogWidth": "720"
+                        },
                         "/Configuration": {
                             "PreloadWeight": "62"
                         }
@@ -170,9 +181,9 @@ var layout = {
                             "DialogWidth": "720"
                         },
                         "/Configuration/General": {
-
-                            "hoveredColor": "#20ffffff",
-                            "pressedColor": "#40ffffff",
+                            "edgeColor": "#00000000",
+                            "hoveredColor": "#20000000",
+                            "pressedColor": "#40000000",
                             "size": "8"
                         }
                     },
@@ -194,11 +205,11 @@ var layout = {
                     "PreloadWeight": "42"
                 }
             },
-            "height": 2.6666666666666665,
+            "height": 2.888888888888889,
             "hiding": "normal",
             "location": "bottom",
-            "maximumLength": 80,
-            "minimumLength": 80,
+            "maximumLength": 106.66666666666667,
+            "minimumLength": 106.66666666666667,
             "offset": 0
         }
     ],
