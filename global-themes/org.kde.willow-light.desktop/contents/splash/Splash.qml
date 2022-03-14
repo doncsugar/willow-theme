@@ -13,7 +13,7 @@ import QtGraphicalEffects 1.0
 Rectangle {
     id: root
     //ideally shows set color if user isn't using a wallpaper
-    color: (root.userPlugin === "org.kde.color") ? Qt.rgba(colorRGB[0],colorRGB[1],colorRGB[2],colorRGB[3]) : "black"
+    color: (root.userPluginArray === "org.kde.color") ? Qt.rgba(colorRGB[0],colorRGB[1],colorRGB[2],colorRGB[3]) : "black"
 
     PlasmaCore.DataSource {
         id: executable
@@ -37,7 +37,7 @@ Rectangle {
     //becomes an array of strings
     property var colorRGB: ''
     //whether they're using [color or image]
-    property string userPlugin: ''
+    property var userPluginArray: ''
     //all of this code does nothing
     property string checkWallpaper: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.image\", \"General\");print(d.readConfig(\"Image\"))}';"
     property string checkColor: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.color\", \"General\");print(d.readConfig(\"Color\"))}';"
@@ -61,8 +61,10 @@ Rectangle {
                 root.colorRGB = root.colorRGB.split(",");
             }
             if (command === root.checkPlugin) {
-                root.userPlugin = stdout.replace('\n', ' ').trim();
-                root.userPlugin = stdout.replace(' ', '').trim();
+                var outputPlugin = stdout.replace('\n', ' ').trim();
+                outputPlugin = outputPlugin.replace('\n', ' ').trim();
+                outputPlugin = outputPlugin.split("org.");
+                root.userPluginArray = "org." + outputPlugin[1];
             }
         }
     }
@@ -95,7 +97,7 @@ Rectangle {
         //wallpaperDir.includes("file") ? wallpaperDir : "wallpaper"
         //source: wallpaperDir !== "" ? wallpaperDir : "wallpaper"
         source: wallpaperDir.includes("file") ? wallpaperDir : "wallpaper"
-        visible: !(root.userPlugin === "org.kde.color") ? true : false
+        visible: !(root.userPluginArray === "org.kde.color") ? true : false
     }
 
     Image {
@@ -248,14 +250,14 @@ Rectangle {
         color: "white"
 //             font.bold: true;
         font.pixelSize: 18
-        font.weight: Font.Medium
+        font.weight: Font.Normal
         // Work around Qt bug where NativeRendering breaks for non-integer scale factors
         // https://bugreports.qt.io/browse/QTBUG-67007
         renderType: Screen.devicePixelRatio % 1 !== 0 ? Text.QtRendering : Text.NativeRendering
         anchors.horizontalCenter: plasmaShell.horizontalCenter
         anchors.top: plasmaShell.bottom
         anchors.margins: PlasmaCore.Units.gridUnit
-        text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "This is the first text the user sees while starting in the splash screen, should be translated as something short, is a form that can be seen on a product. Plasma is the project name so shouldn't be translated.", "Plasma 25th Anniversary Edition by KDE")
+        text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "This is the first text the user sees while starting in the splash screen, should be translated as something short, is a form that can be seen on a product. Plasma is the project name so shouldn't be translated.", "Plasma made by KDE")
     }
 
 
