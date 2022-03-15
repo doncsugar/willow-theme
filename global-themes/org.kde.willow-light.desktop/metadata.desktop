@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=Based on Breeze by the KDE VDG
 Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
-Name=Willow Light
+Name=Willow Desktop \n(Light)
 Type=Service
 
 X-KDE-ServiceTypes=Plasma/LookAndFeel

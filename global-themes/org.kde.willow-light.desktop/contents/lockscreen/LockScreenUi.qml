@@ -535,6 +535,19 @@ PlasmaCore.ColorScope {
                 }
 
                 visible: inputPanel.status == Loader.Ready
+
+                background: Rectangle {
+                    property int padding: 5
+                    color: parent.pressed ? "white" : "#80ffffff"
+                    radius: 5
+                    anchors.fill: parent
+                    opacity: parent.hovered || parent.visualFocus ? 0.3 : 0
+                }
+
+                leftPadding: background.padding
+                topPadding: background.padding
+                rightPadding: background.padding
+                bottomPadding: background.padding
             }
 
             PlasmaComponents3.ToolButton {
@@ -556,6 +569,19 @@ PlasmaCore.ColorScope {
                 onClicked: keyboardLayoutSwitcher.keyboardLayout.switchToNextLayout()
 
                 visible: keyboardLayoutSwitcher.hasMultipleKeyboardLayouts
+
+                background: Rectangle {
+                    property int padding: 5
+                    color: parent.pressed ? "white" : "#80ffffff"
+                    radius: 5
+                    anchors.fill: parent
+                    opacity: parent.hovered || parent.visualFocus ? 0.3 : 0
+                }
+
+                leftPadding: background.padding
+                topPadding: background.padding
+                rightPadding: background.padding
+                bottomPadding: background.padding
             }
 
             Item {
@@ -602,7 +628,7 @@ PlasmaCore.ColorScope {
                     anchors.fill: icon
                     radius: width / 2
                     color: PlasmaCore.ColorScope.textColor
-                    opacity: mouseArea.containsMouse ? .15 : 0
+                    opacity: mouseArea.containsMouse || mouseArea.activeFocus ? .15 : 0
                     Behavior on opacity {
                             PropertyAnimation {
                                 duration: PlasmaCore.Units.shortDuration
@@ -615,6 +641,11 @@ PlasmaCore.ColorScope {
                     hoverEnabled: true
                     //unsure why I can't use ternary to switch open and close. May be timing related?
                     onClicked: menu.visible ? menu.close() : menu.open();
+
+                    activeFocusOnTab: true;
+                    Keys.onReturnPressed: menu.visible ? menu.close() : menu.open();
+                    Keys.onEnterPressed: menu.visible ? menu.close() : menu.open();
+
                     onPositionChanged: fadeoutTimer.restart();
                     anchors.fill: parent
                 }
