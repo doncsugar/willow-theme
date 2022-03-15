@@ -2,7 +2,19 @@
 
 enabled=true
 
-# new material for 23
+# tamer version of below with less banding
+# fafafa 79% opacity
+# contrast=.25
+# intensity=1.35
+# saturation=4
+
+# ffffff 73%
+# my personal presets, may contain severe banding
+# contrast=.25
+# intensity=1.4
+# saturation=5
+
+# new material, darker than I prefer on blacks though
 # fafafa 80%
 contrast=.65
 intensity=1.15
