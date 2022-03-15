@@ -11,6 +11,8 @@ import QtQuick 2.6
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents // Because PC3 ToolButton can't take a menu
 
+import QtQuick.Controls.Styles.Plasma 2.0 as Styles
+
 //import QtQuick.Controls 1.3 as QQC
 import QtQuick.Controls 2.12 as QQC
 
@@ -42,6 +44,14 @@ PlasmaComponents.ToolButton {
     PlasmaCore.ColorScope{
         id: userColors
         colorGroup: PlasmaCore.Theme.ColorGroup
+    }
+
+    style: Styles.ToolButtonStyle {
+        id: style
+        background: ToolButtonBackground {
+            sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/button.svgz"
+            property int padding: 8
+        }
     }
 
     QQC.Menu {

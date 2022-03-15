@@ -634,7 +634,7 @@ PlasmaCore.ColorScope {
                     anchors.fill: icon
                     radius: width / 2
                     color: PlasmaCore.ColorScope.textColor
-                    opacity: mouseArea.containsMouse ? .15 : 0
+                    opacity: mouseArea.containsMouse || mouseArea.activeFocus ? .15 : 0
                     Behavior on opacity {
                             PropertyAnimation {
                                 duration: PlasmaCore.Units.shortDuration
@@ -647,6 +647,10 @@ PlasmaCore.ColorScope {
                     hoverEnabled: true
 
                     onClicked: menu.visible ? menu.close() : menu.open()
+
+                    activeFocusOnTab: true;
+                    Keys.onReturnPressed: menu.visible ? menu.close() : menu.open();
+                    Keys.onEnterPressed: menu.visible ? menu.close() : menu.open();
 
                     onPositionChanged: fadeoutTimer.restart();
                     anchors.fill: parent
