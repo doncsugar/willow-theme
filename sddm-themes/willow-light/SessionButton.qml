@@ -33,7 +33,12 @@ PlasmaComponents.ToolButton {
         currentIndex = sessionModel.lastIndex
     }
 
-    onClicked: menu.visible ? menu.close() : menu.open()
+    onClicked: menu.visible ? menu.close() : menu.open();
+    Keys.onEnterPressed: menu.visible ? menu.close() : menu.open();
+    Keys.onReturnPressed: menu.visible ? menu.close() : menu.open();
+
+    activeFocusOnTab: true;
+    focus: true;
 
     readonly property color menuForegroundColor: userColors.textColor
     readonly property color menuBackgroundColor: userColors.backgroundColor

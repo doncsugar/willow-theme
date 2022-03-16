@@ -27,8 +27,8 @@ Item {
         enabledBorders: surfaceNormal.enabledBorders
         opacity: 0
     }
-
-    state: (control.pressed || control.checked ? "pressed" : (style.controlHovered ? "hover" : "normal"))
+    //don't feel like adding focus state, so focus is defined like a hover
+    state: (control.pressed || control.checked ? "pressed" : (style.controlHovered || control.activeFocus ? "hover" : "normal"))
 
     states: [
         State { name: "normal"

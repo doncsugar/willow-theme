@@ -13,6 +13,9 @@ import QtGraphicalEffects 1.0
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 
+//used to override virtual keyboard background
+import QtQuick.Controls.Styles.Plasma 2.0 as Styles
+
 import org.kde.plasma.components 2.0 as PlasmaComponents2
 
 import org.kde.plasma.components 3.0 as PlasmaComponents3
@@ -565,6 +568,14 @@ PlasmaCore.ColorScope {
                 iconSource: inputPanel.keyboardActive ? "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/input-keyboard-virtual-on.svgz" : "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/input-keyboard-virtual-off.svgz"
                 onClicked: inputPanel.showHide()
                 visible: inputPanel.status == Loader.Ready
+
+                style: Styles.ToolButtonStyle {
+                    id: style
+                    background: ToolButtonBackground {
+                        sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/button.svgz"
+                        property int padding: 8
+                    }
+                }
 
                 //added to align with buttons
                 Layout.alignment: Qt.AlignBottom
