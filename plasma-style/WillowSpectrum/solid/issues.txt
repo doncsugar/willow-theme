@@ -1,0 +1,1 @@
+when background contrast is disabled and the panel is translucent, the headers do not match. The opaque style is meant for the Translucent assets (used when background contrast is on). Essentially: do not use this theme with background contrast off and the panel set to Adaptive or Opaque

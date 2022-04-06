@@ -1,0 +1,42 @@
+[ContrastEffect]
+enabled=true
+
+contrast=0.75
+intensity=1.1
+saturation=3
+
+# contrast=0.5
+# intensity=1.2
+# saturation=3.8
+
+#breeze
+# contrast=0.2
+# intensity=1.4
+# saturation=10
+
+#dark
+# contrast=.4
+# intensity=.7
+# saturation=4
+
+#light
+# contrast=.65
+# intensity=1.15
+# saturation=2.8
+
+[Desktop Entry]
+Name=Willow Spectrum
+Comment=A Windows 11 style demo.
+X-KDE-PluginInfo-Author=doncsugar
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-Name=willow-spectrum-plasma
+X-KDE-PluginInfo-Version=.1
+X-KDE-PluginInfo-Website=
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true
