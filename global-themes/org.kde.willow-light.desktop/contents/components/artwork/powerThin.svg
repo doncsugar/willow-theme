@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31"
+   height="31"
+   viewBox="0 0 8.2020834 8.2020834"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="powerThin.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#262626"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="11.913202"
+     inkscape:cx="14.102002"
+     inkscape:cy="20.64936"
+     inkscape:window-width="1440"
+     inkscape:window-height="819"
+     inkscape:window-x="0"
+     inkscape:window-y="768"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2">
+    <style
+       id="current-color-scheme"
+       type="text/css">      .ColorScheme-Text {
+        color:#888888;
+      }</style>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.7206427,-4.8123524)">
+    <g
+       id="powerThin"
+       class="ColorScheme-Text"
+       fill="currentColor"
+       transform="matrix(0.26458333,0,0,0.26458333,-7.541476,-3.3897308)">
+      <path
+         id="path54"
+         d="M 22,31 V 62.000001 H 53.000001 V 31 Z"
+         fill="none"
+         style="stroke-width:0.96875" />
+      <rect
+         id="rect1596"
+         width="1"
+         height="10"
+         x="36.500015"
+         y="33"
+         rx="0.5"
+         ry="0.5" />
+      <path
+         d="m 31.460937,35.51367 a 0.5,0.5 0 0 0 -0.378906,0.04687 C 27.324072,37.691158 25,41.680071 25,45.999998 c 0,6.621488 5.378512,12 12,12 6.621488,0 12,-5.378512 12,-12 0,-4.317764 -2.32117,-8.304106 -6.076172,-10.435547 a 0.5,0.5 0 0 0 -0.681641,0.1875 0.5,0.5 0 0 0 0.1875,0.681641 C 45.873156,38.388198 48,42.040458 48,45.999998 c 0,6.081048 -4.918952,11 -11,11 -6.081048,0 -11,-4.918952 -11,-11 0,-3.961527 2.128036,-7.614511 5.574219,-9.568359 a 0.5,0.5 0 0 0 0.189453,-0.681641 0.5,0.5 0 0 0 -0.302735,-0.236328 z"
+         id="path8544-6" />
+    </g>
+  </g>
+</svg>

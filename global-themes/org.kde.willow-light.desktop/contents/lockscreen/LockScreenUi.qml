@@ -16,6 +16,9 @@ import org.kde.plasma.workspace.components 2.0 as PW
 import org.kde.plasma.private.sessions 2.0
 import "../components"
 
+import "willowComponents"
+import "willowComponents/buttonComponents"
+
 PlasmaCore.ColorScope {
 
     id: lockScreenUi
@@ -120,7 +123,7 @@ PlasmaCore.ColorScope {
         }
         Timer {
             id: fadeoutTimer
-            interval: 10000
+            interval: 15000
             onTriggered: {
                 if (!lockScreenRoot.blockUI) {
                     lockScreenRoot.uiVisible = false;
@@ -517,145 +520,104 @@ PlasmaCore.ColorScope {
                 bottom: parent.bottom
                 left: parent.left
                 right: parent.right
-                margins: PlasmaCore.Units.smallSpacing
+//                margins: PlasmaCore.Units.smallSpacing
             }
 
-            PlasmaComponents3.ToolButton {
-                //align because power button sticks out
-                Layout.alignment: Qt.AlignBottom
-
-                focusPolicy: Qt.TabFocus
-                text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to show/hide virtual keyboard", "Virtual Keyboard")
-                icon.name: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
-                onClicked: {
-                    // Otherwise the password field loses focus and virtual keyboard
-                    // keystrokes get eaten
-                    mainBlock.mainPasswordBox.forceActiveFocus();
-                    inputPanel.showHide()
+            //unsure if this code is necessary
+            Behavior on opacity {
+                OpacityAnimator {
+                    duration: PlasmaCore.Units.longDuration
                 }
-
-                visible: inputPanel.status == Loader.Ready
-
-                background: Rectangle {
-                    property int padding: 5
-                    color: parent.pressed ? "white" : "#80ffffff"
-                    radius: 5
-                    anchors.fill: parent
-                    opacity: parent.hovered || parent.visualFocus ? 0.3 : 0
-                }
-
-                leftPadding: background.padding
-                topPadding: background.padding
-                rightPadding: background.padding
-                bottomPadding: background.padding
             }
 
-            PlasmaComponents3.ToolButton {
-                //align because power button sticks out
+            RowLayout {
+            //holds anything isn't the power button + battery
                 Layout.alignment: Qt.AlignBottom
+                Layout.margins: PlasmaCore.Units.smallSpacing
 
-                focusPolicy: Qt.TabFocus
-                Accessible.description: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to change keyboard layout", "Switch layout")
-                icon.name: "input-keyboard"
+                PlasmaComponents3.ToolButton {
+                    focusPolicy: Qt.TabFocus
+                    text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to show/hide virtual keyboard", "Virtual Keyboard")
+                    icon.name: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
+                    onClicked: {
+                        // Otherwise the password field loses focus and virtual keyboard
+                        // keystrokes get eaten
+                        mainBlock.mainPasswordBox.forceActiveFocus();
+                        inputPanel.showHide()
+                    }
 
-                PW.KeyboardLayoutSwitcher {
-                    id: keyboardLayoutSwitcher
+                    PlasmaCore.ColorScope.colorGroup: PlasmaCore.Theme.ComplementaryColorGroup
 
-                    anchors.fill: parent
-                    acceptedButtons: Qt.NoButton
+                    background: PlainRectangleToolButton3Background {
+                        buttonColor: PlasmaCore.ColorScope.textColor
+                        //hopefully standardize everything so we can use same values
+                        padding: 6
+                    }
+                    leftPadding: background.padding
+                    topPadding: background.padding
+                    rightPadding: background.padding
+                    bottomPadding: background.padding
+
+                    visible: inputPanel.status == Loader.Ready
                 }
 
-                text: keyboardLayoutSwitcher.layoutNames.longName
-                onClicked: keyboardLayoutSwitcher.keyboardLayout.switchToNextLayout()
+                PlasmaComponents3.ToolButton {
+                    focusPolicy: Qt.TabFocus
+                    Accessible.description: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to change keyboard layout", "Switch layout")
+                    icon.name: "input-keyboard"
 
-                visible: keyboardLayoutSwitcher.hasMultipleKeyboardLayouts
+                    PW.KeyboardLayoutSwitcher {
+                        id: keyboardLayoutSwitcher
 
-                background: Rectangle {
-                    property int padding: 5
-                    color: parent.pressed ? "white" : "#80ffffff"
-                    radius: 5
-                    anchors.fill: parent
-                    opacity: parent.hovered || parent.visualFocus ? 0.3 : 0
+                        anchors.fill: parent
+                        acceptedButtons: Qt.NoButton
+                    }
+
+                    PlasmaCore.ColorScope.colorGroup: PlasmaCore.Theme.ComplementaryColorGroup
+
+                    background: PlainRectangleToolButton3Background {
+                        buttonColor: PlasmaCore.ColorScope.textColor
+                        //hopefully standardize everything so we can use same values
+                        padding: 6
+                    }
+                    leftPadding: background.padding
+                    topPadding: background.padding
+                    rightPadding: background.padding
+                    bottomPadding: background.padding
+
+                    text: keyboardLayoutSwitcher.layoutNames.longName
+                    onClicked: keyboardLayoutSwitcher.keyboardLayout.switchToNextLayout()
+
+                    visible: keyboardLayoutSwitcher.hasMultipleKeyboardLayouts
                 }
-
-                leftPadding: background.padding
-                topPadding: background.padding
-                rightPadding: background.padding
-                bottomPadding: background.padding
             }
 
             Item {
                 Layout.fillWidth: true
             }
 
-            Battery {}
+            Battery {
+                //added to align with power button
+                Layout.alignment: Qt.AlignVCenter
+            }
 
-            Item {
+            WillowPowerButton {
                 // Layout.alignment: Qt.AlignTop
+                // so the missing pixels in the icon don't leave a gap on the right
+                Layout.alignment: Qt.AlignRight
 
-                id: powerMenuButton
-                //not sure what adding 2 does here, but it feels right
-                implicitHeight: (PlasmaCore.Units.gridUnit * 2) + 2
-                width: height
-                //icon for the button
-                PlasmaCore.IconItem {
-                    id: icon
-                    source: "system-shutdown"
-                    anchors.centerIn: parent
+                //hackily chaining opacity so it hides with everything else
+                opacity: parent.opacity
 
-                    width: parent.width
-                    height: width
-                    colorGroup: PlasmaCore.ColorScope.colorGroup
-                    //active: mouseArea.containsMouse || root.activeFocus
-                }
-                //replicating ActionButton, without label
-                Rectangle {
-                    anchors.centerIn: icon
-                    width: icon.width
-                    height: width
-                    radius: width / 2
-                    scale: mouseArea.containsPress ? 1 : 0
-                    color: PlasmaCore.ColorScope.textColor
-                    opacity: 0.15
-                    Behavior on scale {
-                            PropertyAnimation {
-                                duration: PlasmaCore.Units.shortDuration
-                                easing.type: Easing.InOutQuart
-                            }
-                    }
-                }
-                Rectangle {
-                    anchors.fill: icon
-                    radius: width / 2
-                    color: PlasmaCore.ColorScope.textColor
-                    opacity: mouseArea.containsMouse || mouseArea.activeFocus ? .15 : 0
-                    Behavior on opacity {
-                            PropertyAnimation {
-                                duration: PlasmaCore.Units.shortDuration
-                                easing.type: Easing.InOutQuart
-                            }
-                    }
-                }
-                MouseArea {
-                    id: mouseArea
-                    hoverEnabled: true
-                    //unsure why I can't use ternary to switch open and close. May be timing related?
-                    onClicked: menu.visible ? menu.close() : menu.open();
-
-                    activeFocusOnTab: true;
-                    Keys.onReturnPressed: menu.visible ? menu.close() : menu.open();
-                    Keys.onEnterPressed: menu.visible ? menu.close() : menu.open();
-
-                    onPositionChanged: fadeoutTimer.restart();
-                    anchors.fill: parent
-                }
-                //sooner or later I will pick 1 place to put all of these
                 PlasmaCore.ColorScope{
                     colorGroup: PlasmaCore.Theme.ViewColorGroup
                     PowerMenu {
                         id: menu
                         x: parent.x - width / 2 + parent.width / 2
                         y: parent.y - height
+
+                        //hackily chaining opacity so it hides with everything else
+                        opacity: parent.parent.opacity
 
                         readonly property bool lightView: Math.max(PlasmaCore.ColorScope.backgroundColor.r, PlasmaCore.ColorScope.backgroundColor.g, PlasmaCore.ColorScope.backgroundColor.b) > 0.5
                         backgroundColor: PlasmaCore.ColorScope.backgroundColor

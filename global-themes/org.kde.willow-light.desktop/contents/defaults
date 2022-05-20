@@ -17,7 +17,7 @@ Image=Win11OS-light
 cursorTheme=breeze_cursors
 
 [kwinrc][WindowSwitcher]
-LayoutName=org.kde.breeze.desktop
+LayoutName=thumbnail_grid
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop

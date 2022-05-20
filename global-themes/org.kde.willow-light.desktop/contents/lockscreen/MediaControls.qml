@@ -11,6 +11,8 @@ import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 3.0 as PlasmaComponents3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 
+import "willowComponents/buttonComponents"
+
 Item {
     visible: mpris2Source.hasPlayer
     implicitHeight: PlasmaCore.Units.gridUnit * 3
@@ -132,6 +134,16 @@ Item {
             }
             visible: mpris2Source.canGoBack || mpris2Source.canGoNext
             Accessible.name: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Previous track")
+
+            background: PlainRectangleToolButton3Background {
+                buttonColor: PlasmaCore.ColorScope.textColor
+                //hopefully standardize everything so we can use same values
+                padding: 6
+            }
+            leftPadding: background.padding
+            topPadding: background.padding
+            rightPadding: background.padding
+            bottomPadding: background.padding
         }
 
         PlasmaComponents3.ToolButton {
@@ -144,6 +156,16 @@ Item {
                 mpris2Source.playPause()
             }
             Accessible.name: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Play or Pause media")
+
+            background: PlainRectangleToolButton3Background {
+                buttonColor: PlasmaCore.ColorScope.textColor
+                //hopefully standardize everything so we can use same values
+                padding: 6
+            }
+            leftPadding: background.padding
+            topPadding: background.padding
+            rightPadding: background.padding
+            bottomPadding: background.padding
         }
 
         PlasmaComponents3.ToolButton {
@@ -158,6 +180,16 @@ Item {
             }
             visible: mpris2Source.canGoBack || mpris2Source.canGoNext
             Accessible.name: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Next track")
+
+            background: PlainRectangleToolButton3Background {
+                buttonColor: PlasmaCore.ColorScope.textColor
+                //hopefully standardize everything so we can use same values
+                padding: 6
+            }
+            leftPadding: background.padding
+            topPadding: background.padding
+            rightPadding: background.padding
+            bottomPadding: background.padding
         }
     }
 }

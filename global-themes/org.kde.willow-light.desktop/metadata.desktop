@@ -16,6 +16,6 @@ X-KDE-PluginInfo-Website=
 X-Plasma-MainScript=defaults
 
 #willow present windows, show desktop, onze menu
-#light colors, light icons, papirus icons, light plasma, yeyuwallpaper 1563780, lightdark wallpaper, light sddm
+#light colors, light icons, papirus icons, light plasma, small icons light plasma, yeyuwallpaper 1563780, lightdark wallpaper, light sddm
 #latte layout not yet included
-X-KPackage-Dependencies=kns://plasmoids.knsrc/api.kde-look.org/1719511,kns://plasmoids.knsrc/api.kde-look.org/1100895?linkid=2,kns://plasmoids.knsrc/api.kde-look.org/1545530,kns://colorschemes.knsrc/api.kde-look.org/1562235,kns://icons.knsrc/api.kde-look.org/1724815,kns://icons.knsrc/api.kde-look.org/1166289,kns://plasma-themes.knsrc/api.kde-look.org/1562918,kns://wallpaper.knsrc/api.kde-look.org/1563780,kns://wallpaper.knsrc/api.kde-look.org/1719497,kns://sddmtheme.knsrc/api.kde-look.org/1727270
+X-KPackage-Dependencies=kns://plasmoids.knsrc/api.kde-look.org/1719511,kns://plasmoids.knsrc/api.kde-look.org/1100895?linkid=2,kns://plasmoids.knsrc/api.kde-look.org/1545530,kns://colorschemes.knsrc/api.kde-look.org/1562235,kns://icons.knsrc/api.kde-look.org/1724815,kns://icons.knsrc/api.kde-look.org/1166289,kns://plasma-themes.knsrc/api.kde-look.org/1562918,kns://plasma-themes.knsrc/api.kde-look.org/1733170,kns://wallpaper.knsrc/api.kde-look.org/1563780,kns://wallpaper.knsrc/api.kde-look.org/1719497,kns://sddmtheme.knsrc/api.kde-look.org/1727270
