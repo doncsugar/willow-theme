@@ -28,7 +28,7 @@ PlasmaCore.ColorScope {
     id: root
 
     // Used to access theme elements
-    property string plasmaThemePrefix: "/usr/share/sddm/themes/willow2/WillowLightSDDM/"
+    property string plasmaThemePrefix: "/usr/share/sddm/themes/willow-light/WillowLightSDDM/"
 
     // If we're using software rendering, draw outlines instead of shadows
     // See https://bugs.kde.org/show_bug.cgi?id=398317
