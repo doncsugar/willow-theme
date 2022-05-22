@@ -136,7 +136,6 @@ function linkDefaultFolderColor {
 
     for color in ${ICON_COLORS[@]}; do
         color="${color%=*}"
-        #"
         if [[ "$color" == "$CHOSEN_COLOR" ]]; then
             #no special directory handling is required
             #so we can just use the custom prefix
@@ -390,6 +389,8 @@ function testPack {
     themeColor $ICONPACK_FOLDER_LIGHT "Light" "Light"
     exit
 }
+
+# MAIN ENTRY POINT
 
 # testPack
 
