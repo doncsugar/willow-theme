@@ -1,4 +1,4 @@
-import "components"
+import "../components"
 
 import QtQuick 2.0
 import QtQuick.Layouts 1.2
@@ -8,6 +8,10 @@ import org.kde.plasma.components 3.0 as PlasmaComponents3
 
 SessionManagementScreen {
     id: root
+
+    //needed for using themes set in Main.qml
+    property string themeDirectory: plasmaThemePrefix
+
     property Item mainPasswordBox: passwordBox
 
     property bool showUsernamePrompt: !showUserList
@@ -54,9 +58,6 @@ SessionManagementScreen {
         Layout.fillWidth: true
 
         text: lastUserName
-
-        color: "white"
-
         visible: showUsernamePrompt
         focus: showUsernamePrompt && !lastUserName //if there's a username prompt it gets focus first, otherwise password does
         placeholderText: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Username")
@@ -65,9 +66,14 @@ SessionManagementScreen {
             if (root.loginScreenUiVisible) {
                 passwordBox.forceActiveFocus()
             }
+
+        //hardcoded since the style is hardcoded
+        color: "white"
+
+        //added the following to override the background
         background: TextFieldBackground {
-            sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/lineedit.svgz"
-            property int padding: 8
+            sourceSvg: themeDirectory + "widgets/" + "lineedit" + ".svgz"
+            property int padding: Math.floor(8  * PlasmaCore.Units.devicePixelRatio)
         }
 
         leftPadding: background.padding
@@ -88,8 +94,6 @@ SessionManagementScreen {
             font.pointSize: fontSize + 1
             Layout.fillWidth: true
 
-            color: "white"
-
             placeholderText: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Password")
             focus: !showUsernamePrompt || lastUserName
             echoMode: TextInput.Password
@@ -101,15 +105,23 @@ SessionManagementScreen {
                 }
             }
 
+            //hardcoded since the style is hardcoded
+            color: "white"
+
+            //added the following to override the background
             background: TextFieldBackground {
-                sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/lineedit.svgz"
-                property int padding: 8
+                sourceSvg: themeDirectory + "widgets/" + "lineedit" + ".svgz"
+                property int padding: Math.floor(8  * PlasmaCore.Units.devicePixelRatio)
             }
 
             leftPadding: background.padding
             topPadding: background.padding
             rightPadding: background.padding
             bottomPadding: background.padding
+            ////leftPadding: (true ? background.margins.left : 0) + (control.mirrored ? inlineButtonRow.width : 0)
+            ////topPadding: true ? background.margins.top : 0
+            ////rightPadding: (true ? background.margins.right : 0) + (control.mirrored ? 0 : inlineButtonRow.width)
+            ////bottomPadding: true ? background.margins.bottom : 0
 
             visible: root.showUsernamePrompt || userList.currentItem.needsPassword
 
@@ -145,9 +157,13 @@ SessionManagementScreen {
             Layout.preferredHeight: passwordBox.implicitHeight
             Layout.preferredWidth: text.length == 0 ? loginButton.Layout.preferredHeight : -1
 
+//            icon.name: text.length == 0 ? (root.LayoutMirroring.enabled ? "go-previous" : "go-next") : ""
+
             PlasmaCore.SvgItem {
                 opacity: parent.enabled ? 1 : 0.6
-                svg: PlasmaCore.Svg { imagePath: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/icons/go.svgz" }
+                // I'm pretty sure this inherits colors properly
+                //if not, the text color is also hard-coded so it might be okay
+                svg: PlasmaCore.Svg { imagePath: themeDirectory + "icons/" + "go" + ".svgz" }
                 elementId: loginButton.text.length == 0 ? (root.LayoutMirroring.enabled ? "go-previous" : "go-next") : ""
                 anchors.centerIn: parent
             }
@@ -156,8 +172,8 @@ SessionManagementScreen {
             onClicked: startLogin();
 
             background: ButtonBackground {
-                sourceSvg: "/usr/share/sddm/themes/willow-dark/WillowDarkSDDM/widgets/button.svgz"
-                property int padding: 8
+                sourceSvg: themeDirectory + "widgets/" + "button" + ".svgz"
+                property int padding: Math.floor(8  * PlasmaCore.Units.devicePixelRatio)
             }
 
             leftPadding: background.padding
