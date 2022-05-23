@@ -23,6 +23,12 @@ ButtonWidthClose=40
 ButtonWidthMaximizeRestore=40
 ButtonWidthMinimize=40
 
+ButtonWidthKeepabove=39
+ButtonWidthKeepbelow=39
+ButtonWidthHelp=39
+
+ButtonWidthAlldesktops=40
+
 ButtonHeight=24
 ButtonSpacing=2
 ButtonMarginTop=0
