@@ -12,7 +12,6 @@ Item {
     implicitHeight: Math.round( ( (powerIcon.visible ? 31 : 32) + (2 * 11) ) * PlasmaCore.Units.devicePixelRatio)
     width: height
 
-
     //icon for the button
     PlasmaCore.SvgItem {
         id: powerIcon
@@ -23,7 +22,8 @@ Item {
         visible: naturalSize.width === 31
 
         //this code functions differently from iconItem. Need hidpi display to test which is best
-        width: Math.round(31 * PlasmaCore.Units.devicePixelRatio)
+        //icon looks weird at 31px even though that's its original size
+        width: Math.round(32 * PlasmaCore.Units.devicePixelRatio)
         height: width
 
         //the name of the custom icon
@@ -52,7 +52,8 @@ Item {
         //chooses icon in use
         anchors.centerIn: powerIcon.visible ? powerIcon : powerIconBackup
         //scales to the size of the icon in use
-        width: (powerIcon.visible ? powerIcon.width : powerIconBackup.width) + Math.floor(PlasmaCore.Units.smallSpacing * 2)
+        //true case of ternary sets the width to 31, icon's width can't be used because it has to be 32px for some reason or it looks blurry
+        width: (powerIcon.visible ? Math.round(31 * PlasmaCore.Units.devicePixelRatio) : powerIconBackup.width) + Math.floor(PlasmaCore.Units.smallSpacing * 2)
         height: width
         radius: width / 2
         scale: mouseArea.containsPress ? 1 : 0
