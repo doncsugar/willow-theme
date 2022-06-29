@@ -11,12 +11,12 @@ BorderLeft=3
 BorderRight=3
 BorderBottom=4
 TitleEdgeTop=0
-TitleEdgeBottom=0
+TitleEdgeBottom=1
 TitleEdgeLeft=0
 TitleEdgeRight=0
 TitleBorderLeft=8
 TitleBorderRight=0
-TitleHeight=29
+TitleHeight=28
 
 ButtonWidth=28
 ButtonWidthClose=44

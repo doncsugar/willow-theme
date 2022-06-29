@@ -48,16 +48,17 @@ function outputBlurTheme {
     sed -n -e "/^\[Desktop Entry\]/,/^\[.*\]/ s|^\(X-KDE-PluginInfo-Name[ \t]*=[ \t]*.*$\)|\1|p" "$dirName/metadata.desktop"
 }
 
-function addShaderIcons {
+function changeIcons {
     dirName="output/$1"
     iconDir="$2"
-    cp -a $iconDir/icons/* $dirName
+    cp -a $iconDir/* $dirName
 }
 
 rm -r "output/WillowDark" "output/WillowDarkAlt" "output/WillowDarkBlur" "output/WillowDarkBlurAlt"
 rm -r "output/WillowLight" "output/WillowLightAlt" "output/WillowLightBlur" "output/WillowLightBlurAlt"
 rm -r "output/WillowLightly"
 rm -r "output/WillowLightShader" "output/WillowDarkShader"
+rm -r "output/WillowLightAltShader" "output/WillowDarkAltShader"
 
 mkdir -p "output"
 
@@ -80,10 +81,18 @@ outputTheme "light/icons" "lightly/blur" "WillowLightly"
 
 #generate shader versions
 outputBlurTheme "WillowDark" "WillowDarkShader" "Willow Dark (Shaders)" "willow-dark-aurorae-shaders" "src/dark-shader"
-addShaderIcons "WillowDarkShader" "src/dark-shader"
+changeIcons "WillowDarkShader" "src/dark-shader/icons"
 
 outputBlurTheme "WillowLight" "WillowLightShader" "Willow Light (Shaders)" "willow-light-aurorae-shaders" "src/light-shader"
-addShaderIcons "WillowLightShader" "src/light-shader"
+changeIcons "WillowLightShader" "src/light-shader/icons"
+
+#generate alt shader versions
+outputBlurTheme "WillowDarkAlt" "WillowDarkAltShader" "Willow Dark Alt (Shaders)" "willow-dark-alt-aurorae-shaders" "src/dark-shader"
+changeIcons "WillowDarkAltShader" "src/dark/icons-alt"
+
+outputBlurTheme "WillowLightAlt" "WillowLightAltShader" "Willow Light Alt (Shaders)" "willow-light-alt-aurorae-shaders" "src/light-shader"
+changeIcons "WillowLightAltShader" "src/light/icons-alt"
+# parameters: existing output source, output folder name, theme name in settings, plugin name, decoration.svg source
 
 echo "done"
 exit
