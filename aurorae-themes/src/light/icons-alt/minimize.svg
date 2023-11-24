@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    sodipodi:docname="minimize.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    id="svg1067"
    version="1.1"
    viewBox="0 0 105.83333 26.458334"
@@ -331,16 +331,16 @@
      inkscape:object-paths="false"
      units="px"
      inkscape:window-maximized="1"
-     inkscape:window-y="0"
+     inkscape:window-y="768"
      inkscape:window-x="0"
-     inkscape:window-height="872"
-     inkscape:window-width="1440"
+     inkscape:window-height="1008"
+     inkscape:window-width="1920"
      showgrid="true"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="-65.875001"
-     inkscape:cx="123.75"
+     inkscape:cy="19.125"
+     inkscape:cx="75.125"
      inkscape:zoom="4"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
@@ -348,7 +348,9 @@
      bordercolor="#666666"
      pagecolor="#bfbfbf"
      id="namedview1700"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#bfbfbf">
     <inkscape:grid
        id="grid1648"
        type="xygrid" />
@@ -450,16 +452,23 @@
        transform="matrix(1.1578947,0,0,0.87500005,-13.841886,-6.5153642)"
        id="base">
       <rect
-         y="-9.1848211"
-         x="0.98617435"
-         height="7.2571406"
-         width="9.140151"
+         y="-9.7895832"
+         x="0.52916676"
+         height="8.4666662"
+         width="10.054167"
          id="rect896"
          style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723" />
     </g>
     <g
        id="activated-base"
        transform="matrix(1.1578947,0,0,0.87500003,-13.841887,-8.0367179)">
+      <rect
+         y="-19.84375"
+         x="0.52916759"
+         height="8.4666662"
+         width="10.054167"
+         id="rect34812"
+         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723" />
       <rect
          style="opacity:0.1;fill:#000000;fill-opacity:1"
          id="rect986"
@@ -475,6 +484,13 @@
        id="pressed-base"
        transform="matrix(1.1578947,0,0,0.87500004,-13.841887,-9.3596336)">
       <rect
+         y="-30.427084"
+         x="0.52916765"
+         height="8.4666662"
+         width="10.054167"
+         id="rect34812-6"
+         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723" />
+      <rect
          y="-29.822323"
          x="0.98617518"
          height="7.2571402"
@@ -486,10 +502,10 @@
          rx="0.91401571" />
     </g>
     <rect
-       y="-45.508331"
-       x="-12.7"
-       height="6.3500004"
-       width="10.583333"
+       y="-46.037498"
+       x="-13.229167"
+       height="7.4083319"
+       width="11.641667"
        id="disabled-base"
        style="opacity:0.003;fill:#808080;fill-opacity:1;stroke-width:0.35101" />
     <g

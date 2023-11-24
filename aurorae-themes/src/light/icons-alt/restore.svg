@@ -5,7 +5,7 @@
    viewBox="0 0 105.83333 26.458334"
    version="1.1"
    id="svg1067"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="restore.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -328,16 +328,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284273"
-     inkscape:cx="76.013974"
-     inkscape:cy="-87.150905"
+     inkscape:cx="50.734908"
+     inkscape:cy="-62.40217"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="872"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="768"
      inkscape:window-maximized="1"
      units="px"
      inkscape:object-paths="false"
@@ -348,7 +348,9 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-nodes="true"
      inkscape:snap-grids="true"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#bfbfbf">
     <inkscape:grid
        type="xygrid"
        id="grid1648" />
@@ -452,14 +454,21 @@
       <rect
          style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723"
          id="rect896"
-         width="9.140151"
-         height="7.2571402"
-         x="0.98617435"
-         y="-9.1848211" />
+         width="10.054167"
+         height="8.4666662"
+         x="0.52916676"
+         y="-9.7895832" />
     </g>
     <g
        transform="matrix(1.1578947,0,0,0.87500003,-13.841887,-8.0367179)"
        id="activated-base">
+      <rect
+         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723"
+         id="rect25207"
+         width="10.054167"
+         height="8.4666662"
+         x="0.52916747"
+         y="-19.84375" />
       <rect
          class="ColorScheme-Text"
          y="-19.238989"
@@ -475,6 +484,13 @@
        transform="matrix(1.1578947,0,0,0.87500004,-13.841887,-9.3596336)"
        id="pressed-base">
       <rect
+         style="opacity:0.003;fill:#000000;fill-opacity:1;stroke-width:0.348723"
+         id="rect25207-1"
+         width="10.054167"
+         height="8.4666662"
+         x="0.52916753"
+         y="-30.427084" />
+      <rect
          class="ColorScheme-Text"
          style="opacity:0.25;fill:#000000;fill-opacity:1"
          id="rect1130"
@@ -488,10 +504,10 @@
     <rect
        style="opacity:0.003;fill:#808080;fill-opacity:1;stroke-width:0.35101"
        id="disabled-base"
-       width="10.583333"
-       height="6.3500004"
-       x="-12.7"
-       y="-45.508331" />
+       width="11.641667"
+       height="7.4083319"
+       x="-13.229167"
+       y="-46.037498" />
     <g
        id="templateIcons">
       <g
