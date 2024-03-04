@@ -17,6 +17,8 @@ function outputTheme {
     #print out the name and plugin
     sed -n -e "/^\[Desktop Entry\]/,/^\[.*\]/ s|^\(Name[ \t]*=[ \t]*.*$\)|\1|p" "$outputDir/metadata.desktop"
     sed -n -e "/^\[Desktop Entry\]/,/^\[.*\]/ s|^\(X-KDE-PluginInfo-Name[ \t]*=[ \t]*.*$\)|\1|p" "$outputDir/metadata.desktop"
+    # generate metadata.json for plasma 6 themes
+    desktoptojson -i "$outputDir/metadata.desktop" "$outputDir/metadata.json"
 }
 
 function outputBlurTheme {
